@@ -347,15 +347,15 @@ lst.sort(key=s.index)
 
 ### 3.1.6 字符串的数据验证
 
-![avatar](a.png)
+![avatar](Markdown_image/a.png)
 
 ### 3.2 正则表达式
 
-![avatar](元字符.png)
-![avatar](限定符.png)
-![avatar](正则.png)
-![avatar](1.png)
-![avatar](2.png)
+![avatar](Markdown_image/元字符.png)
+![avatar](Markdown_image/限定符.png)
+![avatar](Markdown_image/正则.png)
+![avatar](Markdown_image/1.png)
+![avatar](Markdown_image/2.png)
 
 ## 4.1 异常处理
 
@@ -391,8 +391,8 @@ except Exception as e:
 
 ## 4.3 Python中常见异常类型
 
-![avatar](b.jpg)
-![avatar](c.jpg)
+![avatar](Markdown_image/b.jpg)
+![avatar](Markdown_image/c.jpg)
 
 ## 4.4 Pycharm程序调试
 
@@ -403,8 +403,8 @@ except Exception as e:
 ---
 
 
-![avatar](aa.jpg)
-![avatar](bb.jpg)
+![avatar](Markdown_image/aa.jpg)
+![avatar](Markdown_image/bb.jpg)
 
 ---
 ## 5.函数
@@ -478,14 +478,14 @@ scores.sort(key=lambda x:x.get('score'),reverse='True')
 
 ## 5.4 常用内置函数
 
-![avatar](aaa.jpg)
-![avatar](bbb.jpg)
-![avatar](ccc.jpg)
+![avatar](Markdown_image/aaa.jpg)
+![avatar](Markdown_image/bbb.jpg)
+![avatar](Markdown_image/ccc.jpg)
 
 > - reversed()、zip()、enumerate() 结果需要转换类型
 > - 函数作为参数不需要写小括号
 
-![avatar](dddd.jpg)
+![avatar](Markdown_image/dddd.jpg)
 
 ```python
 print(format(3.14,'20'))    #数值型默认右对齐
@@ -496,7 +496,7 @@ print(format('hello','*<20'))
 
 ---
 ### 6.1 类的组成
-![avatar](图片1.jpg)
+![avatar](Markdown_image/图片1.jpg)
 ```python
 class Student:
     #类属性：定义在类中，方法外的变量
@@ -544,7 +544,7 @@ def intruduce():
     pass
 stu.fun=intruduce  #函数的赋值，注意不加小括号
 ```
-![None](g.jpg)
+![None](Markdown_image/g.jpg)
 
 ---
 - 访问私有的实例属性和方法
