@@ -552,3 +552,4 @@ stu.fun=intruduce  #函数的赋值，注意不加小括号
 print(stu._Student__age)
 stu._Student__fun()
 ```
+### 6.3
