@@ -553,3 +553,4 @@ print(stu._Student__age)
 stu._Student__fun()
 ```
 ### 6.3 属性的设置
+- 使用
