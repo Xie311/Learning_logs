@@ -549,4 +549,5 @@ stu.fun=intruduce  #函数的赋值，注意不加小括号
 ---
 访问私有的实例属性和方法
 ```python
+print(stu._Student__age)
 ```
