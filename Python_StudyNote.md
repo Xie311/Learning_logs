@@ -553,4 +553,4 @@ print(stu._Student__age)
 stu._Student__fun()
 ```
 ### 6.3 属性的设置
-- 使用@
+- 使用@property修改方法，将方法转成属性使用
