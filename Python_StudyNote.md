@@ -347,7 +347,7 @@ lst.sort(key=s.index)
 
 ### 3.1.6 字符串的数据验证
 
-![avatar](a.png)
+![avatar](D:\Pycharm Project\study_log\a.png)
 
 ### 3.2 正则表达式
 
