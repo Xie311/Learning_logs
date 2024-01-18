@@ -5,8 +5,6 @@
 ![](https://pic1.zhimg.com/80/v2-db336093c3e8c0257d0e599b797b8e74_1440w.webp)
 
 ---
-
----
 git status  展示当前GIt仓库状态及目录下信息 
  
  git add 
@@ -59,7 +57,7 @@ hint: 'git pull ...') before pushing again
  【解决方法：git pull --rebase origin master】
 
 ---
----
+
 git 结构图示
 
 `Workspace`: 工作区
