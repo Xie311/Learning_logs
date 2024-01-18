@@ -5,7 +5,6 @@
 ![](https://pic1.zhimg.com/80/v2-db336093c3e8c0257d0e599b797b8e74_1440w.webp)
 
 ---
-- 
 git status  展示当前GIt仓库状态及目录下信息 
  
  git add 
@@ -21,7 +20,7 @@ git status  展示当前GIt仓库状态及目录下信息
 
  git checkout -b<branch name>  新建分支并切入 
 
- - 
+---
  
  git branch  查看分支信息  
  
@@ -32,7 +31,7 @@ git status  展示当前GIt仓库状态及目录下信息
  ：x保存   ：q退出
 
   
- - 
+---
  git clion  克隆Git仓库到本地，让自己能够查看或者修改项目 
  
  git pull   拉取远程仓库数据并合并到当前分支(git pull=git fetch+git merge) 
@@ -41,14 +40,14 @@ git status  展示当前GIt仓库状态及目录下信息
 
   
  
- - 
+ - --
  cd .. 
  
  cd 切换目录  
  
  ls
  
- 
+ ---
  【Git在push推送时，报错提示信息如下】 
  
   hint: Updates were rejected because the tip of your current branch is behind
