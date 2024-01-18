@@ -548,6 +548,8 @@ stu.fun=intruduce  #函数的赋值，注意不加小括号
 
 ---
 - 访问私有的实例属性和方法
+
+对象名._类名_xxx 
 ```python
 print(stu._Student__age)
 stu._Student__fun()
@@ -577,6 +579,7 @@ print(stu.name,stu,gender)  #stu.gender会执行stu.gender()
 stu.gender='女'
 ```
 ### 6.4 继承
+实现代码的复用
 - 一个子类可以继承多个父类
 
 `class 类名(父类1，父类2，...)`
