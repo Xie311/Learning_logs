@@ -576,3 +576,57 @@ print(stu.name,stu,gender)  #stu.gender会执行stu.gender()
 
 stu.gender='女'
 ```
+### 6.4 继承
+- 一个子类可以继承多个父类
+
+`class 类名(父类1，父类2，...)`
+- 一个父类可以拥有多个子类
+- 如果一个类没有继承任何类，那么这个类默认继承object类（可不写小括号）
+```python
+class Penson:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f'你好，我是{self.name},我今年{self.age}岁')
+
+class Student(Penson):
+    def __init__(self,name,age,stuno):
+        super().__init__(name,age)  #调用父类的初始化方法
+        self.stuno=stuno
+
+class Doctor(Penson):
+    def __init__(self,name,age,department):
+        super().__init__(name,age)  #调用父类的初始化方法
+        self.department=department
+
+stu=Student(a,b,c)
+stu,show()
+```
+多继承
+```python
+calss FatherA():
+    def __init__(self,name):
+        self.name=name
+    
+    def showA(self):
+        print('A')
+
+calss FatherB():
+    def __init__(self,age):
+        self.age=age
+    
+    def showB(self):
+        print('B')
+
+class Son(FatherA,FatherB):
+    def __init__(self,name,age,gender):
+    #调用两个父类的初始化方法
+    FatherA.__init__(self,name)
+    FatherB.__init__(self,age)
+    self.gender=gender
+
+son=Son('小昱'，16,'女')
+son.showA()
+son.showB()
+```
