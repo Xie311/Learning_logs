@@ -55,7 +55,7 @@ git status  展示当前GIt仓库状态及目录下信息
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again 
  
- 【git pull --rebase origin master】
+ 【解决方法：git pull --rebase origin master】
 
 ---
 git 结构图示
