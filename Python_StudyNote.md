@@ -676,3 +676,5 @@ fun(dog)
 ![None](Markdown_image/s.jpg)
 > 如果继承了多个父类，class.__base__只显示第一个父类
 ### 6.9 类的深拷贝与浅拷贝
+![None](Markdown_image/ss.jpg)
+![None](Markdown_image/sss.jpg)
