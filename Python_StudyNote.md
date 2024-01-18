@@ -654,13 +654,16 @@ class Dog():
     def eat(self):
         print('狗啃骨头')
 #这三个类中都有一个同名的方法eat
+
 #编写函数
 def fun(obj):  #obj是函数形参，在定义处不知道其数据类型
     obj.eat()  #通过变量obj（对象）调用eat方法
+    
 #创建三个类的对象
 per=Person()
 cat=Cat()
 dog=Dog()
+
 #调用fun函数
 fun(per)
 fun(cat)
