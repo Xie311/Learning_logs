@@ -16,9 +16,11 @@ git status  展示当前GIt仓库状态及目录下信息
  git log  查看提交日志（键入q退出） 
  
  git checkout  版本切换(git checkout master)
- 
- 
+
+
  git checkout -b<branch name>  新建分支并切入 
+
+ 
  
  git branch  查看分支信息  
  
@@ -27,14 +29,16 @@ git status  展示当前GIt仓库状态及目录下信息
  insert插入模式  auto（自动合并）  esc退出插入模式 
  
  ：x保存   ：q退出
- 
+
+  
  
  git clion  克隆Git仓库到本地，让自己能够查看或者修改项目 
  
  git pull   拉取远程仓库数据并合并到当前分支(git pull=git fetch+git merge) 
  
  git push   推送本地仓库的commit记录到远程仓库
- 
+
+  
  
  
  cd .. 
