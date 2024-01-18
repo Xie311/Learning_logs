@@ -630,3 +630,4 @@ son=Son('小昱'，16,'女')
 son.showA()
 son.showB()
 ```
+### 6.5 方法重写
