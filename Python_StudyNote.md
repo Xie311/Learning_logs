@@ -86,6 +86,8 @@ print(max(s))
 
 元素可变但内存地址不变，故列表是可变数据类型
 
+---
+
 ### 2.1.1 创建列表
 
 ```python
@@ -331,13 +333,13 @@ new_s=''
 for item in s:
     if item not in new_s:
         new_s+=item
-      
+    
 (2) 索引+not in
 new_s=''
 for i in range(len(s)):
     if s[i] not in new_s:
         new_s+=s[i]
-      
+    
 (3) 集合去重+列表排序
 new_s=set(s)    #集合元素不重复
 lst=list(new_s)
@@ -352,9 +354,17 @@ lst.sort(key=s.index)
 ### 3.2 正则表达式
 
 ![avatar](Markdown_image/元字符.png)
+
+---
 ![avatar](Markdown_image/限定符.png)
+
+---
 ![avatar](Markdown_image/正则.png)
+
+---
 ![avatar](Markdown_image/1.png)
+
+---
 ![avatar](Markdown_image/2.png)
 
 ## 4.1 异常处理
@@ -392,6 +402,8 @@ except Exception as e:
 ## 4.3 Python中常见异常类型
 
 ![avatar](Markdown_image/b.jpg)
+
+---
 ![avatar](Markdown_image/c.jpg)
 
 ## 4.4 Pycharm程序调试
@@ -402,15 +414,16 @@ except Exception as e:
 
 ---
 
-
 ![avatar](Markdown_image/aa.jpg)
+
+---
 ![avatar](Markdown_image/bb.jpg)
 
 ---
+
 ## 5.函数
 
 ## 5.1 函数的参数传递
-
 - 位置传参、关键字传参与默认值参数
 
 ```python
@@ -439,14 +452,14 @@ def fun1(a,b=20`)
 def fun1(*para):
     for item in para:
         print(item) 
-      
+    
 fun1(*[10,20,30,40])  #调用时，参数前加一颗星，将列表解包
 
 
 def fun2(**para):
     for key,value in para.items():
         print(key,value)
-      
+    
 d={'a':1,'b':2,'c':3}
 fun2(**d)  #前加**，进行系列解包操作
 ```
@@ -479,7 +492,11 @@ scores.sort(key=lambda x:x.get('score'),reverse='True')
 ## 5.4 常用内置函数
 
 ![avatar](Markdown_image/aaa.jpg)
+
+---
 ![avatar](Markdown_image/bbb.jpg)
+
+---
 ![avatar](Markdown_image/ccc.jpg)
 
 > - reversed()、zip()、enumerate() 结果需要转换类型
@@ -492,21 +509,23 @@ print(format(3.14,'20'))    #数值型默认右对齐
 print(format('hello',20))   #字符型默认左对齐
 print(format('hello','*<20')) 
 ```
+
 ## 6.类
 
----
 ### 6.1 类的组成
+
 ![avatar](Markdown_image/图片1.jpg)
+
 ```python
 class Student:
     #类属性：定义在类中，方法外的变量
     school='8z'
-    
+  
     #初始化方法
     def __init__(self,xm,age):  #xm，age是方法的参数
         self.name = xm  #将局部变量的值赋给实例属性
         self.age = age
-        
+      
     #定义在类中的函数，称为方法，自带一个参数self
     def show(self):
         print(f'xm: {self.xm}, age: {self.age}')
@@ -518,7 +537,7 @@ class Student:
     #类方法（不能调用实例属性、实例方法）
     @classmethod
     def sm(cls):
--------------------------------------    
+-------------------------------------  
 #创建类的对象
 stu=Student('xln',18)
 -------------------------------------
@@ -534,7 +553,9 @@ Student.cm()
 #静态方法，直接使用类名打点调用
 Student.sm()
 ```
+
 ### 6.2 动态绑定属性和方法
+
 ```python
 #动态绑定属性
 stu.gender='女'
@@ -544,20 +565,26 @@ def intruduce():
     pass
 stu.fun=intruduce  #函数的赋值，注意不加小括号
 ```
+
 ![None](Markdown_image/g.jpg)
 
 ---
+
 - 访问私有的实例属性和方法
 
-对象名._类名_xxx 
+对象名._类名_xxx
+
 ```python
 print(stu._Student__age)
 stu._Student__fun()
 ```
 
 > 不推荐
+
 ### 6.3 属性的设置
+
 - 使用@property修改方法，将方法转成属性使用
+
 ```python
 def __init__(self,name,gender):
   self.name=name
@@ -572,19 +599,25 @@ def __init__(self,name,gender):
   def gender(self,value):
     self.__gender=value
 
-      
+    
 stu=Student('小昱'，16)
 print(stu.name,stu,gender)  #stu.gender会执行stu.gender()
 
 stu.gender='女'
 ```
+
 ### 6.4 继承
+
 实现代码的复用
+
+---
 - 一个子类可以继承多个父类
 
 `class 类名(父类1，父类2，...)`
+
 - 一个父类可以拥有多个子类
 - 如果一个类没有继承任何类，那么这个类默认继承object类（可不写小括号）
+
 ```python
 class Penson:
     def __init__(self,name,age):
@@ -606,19 +639,21 @@ class Doctor(Penson):
 stu=Student(a,b,c)
 stu,show()
 ```
+
 多继承
+
 ```python
 calss FatherA():
     def __init__(self,name):
         self.name=name
-    
+  
     def showA(self):
         print('A')
 
 calss FatherB():
     def __init__(self,age):
         self.age=age
-    
+  
     def showB(self):
         print('B')
 
@@ -633,19 +668,25 @@ son=Son('小昱'，16,'女')
 son.showA()
 son.showB()
 ```
+
 ### 6.5 方法重写
-子类在重写父类的方法时，要求方法的名称必须与父类方法的名称相同   
+
+子类在重写父类的方法时，要求方法的名称必须与父类方法的名称相同
 在子类重写后的方法中可以通过super().xxx()调用父类中的方法
+
 ```python
 def show(self):
-    super.(),show()
+    super().show()
     print('C')
 ```
+
 ### 6.6 多态
-指”多种形态“，即使不知道一个变量引用的对象到底是什么类型，仍可以通过这个变量调用变量的方法  
-在程序运行过程中根据变量所引用对象的数据类型，**动态决定**调用哪个对象的方法  
-Python语言中的多态不关心对象的数据类型，也不关心类之间是否存在继承关系，只关心对象的行为（方法）   
+
+指”多种形态“，即使不知道一个变量引用的对象到底是什么类型，仍可以通过这个变量调用变量的方法
+在程序运行过程中根据变量所引用对象的数据类型，**动态决定**调用哪个对象的方法
+Python语言中的多态不关心对象的数据类型，也不关心类之间是否存在继承关系，只关心对象的行为（方法）
 只要不同的类型中有**同名的方法**，即可实现多态
+
 ```python
 class Person():
     def eat(self):
@@ -661,7 +702,7 @@ class Dog():
 #编写函数
 def fun(obj):  #obj是函数形参，在定义处不知道其数据类型
     obj.eat()  #通过变量obj（对象）调用eat方法
-    
+  
 #创建三个类的对象
 per=Person()
 cat=Cat()
@@ -672,12 +713,21 @@ fun(per)
 fun(cat)
 fun(dog)
 ```
+
 ### 6.7 object类
+
 - object类是所有类直接或间接的父类
 - 所有类都具有object类的属性和方法
+
 ### 6.8 特殊属性
+
 ![None](Markdown_image/s.jpg)
+
 > 如果继承了多个父类，class.__base__只显示第一个父类
+
 ### 6.9 类的深拷贝与浅拷贝
+
 ![None](Markdown_image/ss.jpg)
+
+---
 ![None](Markdown_image/sss.jpg)
