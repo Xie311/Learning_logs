@@ -672,3 +672,7 @@ fun(dog)
 ### 6.7 object类
 - object类是所有类直接或间接的父类
 - 所有类都具有object类的属性和方法
+### 6.8 特殊属性
+![None](Markdown_image/s.jpg)
+> 如果继承了多个父类，class.__base__只显示第一个父类
+### 6.9 类的深拷贝与浅拷贝
