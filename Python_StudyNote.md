@@ -554,3 +554,17 @@ stu._Student__fun()
 ```
 ### 6.3 属性的设置
 - 使用@property修改方法，将方法转成属性使用
+```python
+def __init__(self,name,gender):
+  self.name=name
+  self.__gender=gender  #self.__gender是私有的实例属性
+  
+  @property
+  def gender(self):
+    return self.__gender
+
+stu=Student('小昱'，16)
+print(stu.name,stu,gender)  #stu.gender会执行stu.gender()
+
+
+```
