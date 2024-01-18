@@ -5,31 +5,33 @@
 ![](https://pic1.zhimg.com/80/v2-db336093c3e8c0257d0e599b797b8e74_1440w.webp)
 
 ---
-git status  展示当前GIt仓库状态及目录下信息
-git add
-git add .    git add -A
-git commit -m""
-git log  查看提交日志（键入q退出）
+git status  展示当前GIt仓库状态及目录下信息 
+git add 
+git add .    git add -A 
+git commit -m"" 
+git log  查看提交日志（键入q退出） 
 git checkout  版本切换(git checkout master)
-
-git checkout -b<branch name>  新建分支并切入
-git branch  查看分支信息
-git merge  合并分支
-insert插入模式  auto（自动合并）  esc退出插入模式
+ 
+git checkout -b<branch name>  新建分支并切入 
+git branch  查看分支信息  
+git merge  合并分支 
+insert插入模式  auto（自动合并）  esc退出插入模式 
 ：x保存   ：q退出
-
-git clion  克隆Git仓库到本地，让自己能够查看或者修改项目
-git pull   拉取远程仓库数据并合并到当前分支(git pull=git fetch+git merge)
+ 
+git clion  克隆Git仓库到本地，让自己能够查看或者修改项目 
+git pull   拉取远程仓库数据并合并到当前分支(git pull=git fetch+git merge) 
 git push   推送本地仓库的commit记录到远程仓库
-
-cd ..
-cd 切换目录 
+ 
+ 
+cd .. 
+cd 切换目录  
 ls
-
-【Git在push推送时，报错提示信息如下】
-hint: Updates were rejected because the tip of your current branch is behind
+ 
+ 
+ 【Git在push推送时，报错提示信息如下】 
+ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again
+hint: 'git pull ...') before pushing again 
 【git pull --rebase origin master】
 
 ---
