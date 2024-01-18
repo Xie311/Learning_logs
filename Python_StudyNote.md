@@ -552,6 +552,8 @@ stu.fun=intruduce  #函数的赋值，注意不加小括号
 print(stu._Student__age)
 stu._Student__fun()
 ```
+
+> 不推荐
 ### 6.3 属性的设置
 - 使用@property修改方法，将方法转成属性使用
 ```python
@@ -559,12 +561,18 @@ def __init__(self,name,gender):
   self.name=name
   self.__gender=gender  #self.__gender是私有的实例属性
   
-  @property
+  @property  #只能查看值，不能修改值
   def gender(self):
     return self.__gender
+  
+  #将gender属性设置为可写属性
+  @gender.setter
+  def gender(self,value):
+    self.__gender=value
 
+      
 stu=Student('小昱'，16)
 print(stu.name,stu,gender)  #stu.gender会执行stu.gender()
 
-
+stu.gender='女'
 ```
