@@ -640,6 +640,7 @@ stu=Student(a,b,c)
 stu,show()
 ```
 
+---
 多继承
 
 ```python
@@ -731,3 +732,79 @@ fun(dog)
 
 ---
 ![None](Markdown_image/sss.jpg)
+## 7.1 模块的导入
+```python
+import 模块名称 [as 别名]
+from 模块名称 import 变量/函数/*  ##通配符
+```
+> 2导入模块中具有同名函数的变量和函数，后导入的会覆盖之前导入的 
+> 如果不想覆盖，使用1打点调用
+
+## 7.2 包
+包是含有__init__.py文件的文件夹（目录）
+```python
+import admin.my_admin as a  ##包名.模块名
+a.info()  ##自带__init__.py中的变量、函数w
+```
+## 8.1 文件操作
+- 打开文件
+```python
+变量名=open(filename,mode,encodeing)
+#如果要打开的文件不存在，则创建文件
+```
+- 操作文件
+```python
+变量名.read()
+变量名.write(s)
+```
+- 关闭文件
+```python
+变量名.close()
+```
+![None](Markdown_image/ss.jpg)
+![None](Markdown_image/ssss.jpg)
+```python
+file.write('abc')
+file.seek(0)
+s=file.read()
+```
+## 8.2 文件复制
+文件的复制就是边读边写操作
+```python
+def copy(src,new_path):
+    #（1）打开源文件
+     file1=open(src,'rb')
+    #(2)打开目标文件
+    file2=open(now_path,'wb')
+    #（3）开始复制，边读边写
+     s=file1.read()
+    file2.write(s)
+    #(4)关闭
+    file2.close()
+    file2.close()  # 先打开的后关，后打开的先关
+
+if __name__=='__main__':
+    src='./a.jpg'  #.代表当前目录
+    new_path='../new_chap/copy_a.jpg'  #..表示上级目录，相当于window后退
+```
+## 8.3 with语句
+上下文管理器
+```python
+with open(filename,mode,encoding)as file:
+  pass
+```
+---
+- 文件的复制操作
+![None](Markdown_image/sm.jpg)
+## 8.4 os模块
+![None](Markdown_image/t1.jpg)
+![None](Markdown_image/t2.jpg)
+![None](Markdown_image/t3.jpg)
+```python
+s=json.dumps(lst,ensure_ascii=False,indent=4)
+#ensure_ascii正常显示中文
+#indent增加数据缩进
+```
+## 8.5 os.path模块
+![None](Markdown_image/t4.jpg)
+![None](Markdown_image/t5.jpg)
