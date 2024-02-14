@@ -39,6 +39,7 @@ a,b,c,d,e,f='winter'
 
 ```python
 if a>b:max1=a
+
 flag='def'
 result='abc'if flag else 'def'
 ```
@@ -61,7 +62,7 @@ for a,b in zip(fruit,count):
             pass
 ```
 
-## 随机数
+## 1.8 随机数
 
 ```python
 import random
@@ -75,8 +76,8 @@ s='Hello'
 s1=s[::-2]                    序列切片
 print('e' in s)
 print('e' not in s)
-print(len(s),end='')
-print(s.count('l'),end='')    出现次数
+print(len(s))
+print(s.count('l'))           出现次数
 print(s.index('l'))           索引位置
 print(min(s))
 print(max(s))
@@ -128,7 +129,7 @@ lst=lst+lst2+lst3
 lst.append('abc')       添加元素
 lst.insert(1,100)       插入元素
 lst.remove(100)         移除元素
-lst.pop(i)              移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
+lst.pop(i)              移除列表中的一个元素(默认最后一个元素),并且返回该元素的值
 lst.clear()             清除所有元素
 lst.reverse()           反转
 new_lst=lst.copy()      复制列表
@@ -136,7 +137,7 @@ lst[1]='my'             改变列表中元素
 
 lst.sort()              列表升序排序
 lst.sort(reverse=True)  列表降序排序
-lst.sort(key=str.lower)  #忽略大小写进行比较  注意str.lower后不加括号（是参数）
+lst.sort(key=str.lower) 忽略大小写进行比较  注意str.lower后不加括号（是参数）
 sorted_lst=sorted(lst)
 ```
 
@@ -163,10 +164,10 @@ t=(10,)  #type(t)=tuple
 
 #元组生成式结果为生成器对象，需要转换成元组或列表才能看到内容  
 t=(i for i in range(1,4))
-print(t)
-#(<generator object <genexpr> at 0x000002CAC0EA41E0>)
+print(t)  #(<generator object <genexpr> at 0x000002CAC0EA41E0>)
 t=tuple(t)
 print(t) 
+
 #取出生成器中的元素
 t=(i for i in range(1,4))
 print(t.__next__())
@@ -178,9 +179,9 @@ t=tuple(t) #元素已全部取出，t为空元组
 ## 2.3 字典
 
 ### 2.3.1 字典的创建
+字典的key需为不可变数据类型
 
 ```python
-#字典的key需为不可变数据类型
 1.d={10:'a',15:'b',20:'a'}  #key值相同时，value进行覆盖
 
 2.lst1=[1,2,3,4]
@@ -300,6 +301,7 @@ print('{1},{0}'.format(name,age))
 ```python
 s='helloworld'
 print('{0:*>20'.format(s))  #字符串的显示宽度为20，右对齐，空白部分使用*填充
+
 #字符串居中对齐
 s.center(20,*)
 ```
@@ -313,7 +315,7 @@ s.center(20,*)
 #默认utf-8，英文占一个字节，中文占三个字节
 #gbk中中文占两个字节
 str.encode(encoding='utf-8',errors='strict/ignore/replace')
-bytes.decode(（scode），'utf-8')
+bytes.decode((scode),'utf-8')
 ```
 
 ### 3.1.4 字符串的拼接
@@ -474,8 +476,8 @@ a,b,c=fun(10)
 
 ## 5.3 匿名函数lambda
 
-指没有名字的函数，只能使用一次
-一般在函数体只有一句代码，且只有一个返回值时使用
+指没有名字的函数，只能使用一次   
+一般在函数体只有一句代码，且只有一个返回值时使用  
 语法结构：result=lambda 参数列表：
 
 ```python
@@ -637,7 +639,7 @@ class Doctor(Penson):
         self.department=department
 
 stu=Student(a,b,c)
-stu,show()
+stu.show()
 ```
 
 ---
@@ -665,14 +667,14 @@ class Son(FatherA,FatherB):
     FatherB.__init__(self,age)
     self.gender=gender
 
-son=Son('小昱'，16,'女')
+son=Son('小昱',16,'女')
 son.showA()
 son.showB()
 ```
 
 ### 6.5 方法重写
 
-子类在重写父类的方法时，要求方法的名称必须与父类方法的名称相同
+子类在重写父类的方法时，要求方法的名称必须与父类方法的名称相同   
 在子类重写后的方法中可以通过super().xxx()调用父类中的方法
 
 ```python
@@ -683,9 +685,9 @@ def show(self):
 
 ### 6.6 多态
 
-指”多种形态“，即使不知道一个变量引用的对象到底是什么类型，仍可以通过这个变量调用变量的方法
-在程序运行过程中根据变量所引用对象的数据类型，**动态决定**调用哪个对象的方法
-Python语言中的多态不关心对象的数据类型，也不关心类之间是否存在继承关系，只关心对象的行为（方法）
+指”多种形态“，即使不知道一个变量引用的对象到底是什么类型，仍可以通过这个变量调用变量的方法  
+在程序运行过程中根据变量所引用对象的数据类型，**动态决定**调用哪个对象的方法    
+Python语言中的多态不关心对象的数据类型，也不关心类之间是否存在继承关系，只关心对象的行为（方法）   
 只要不同的类型中有**同名的方法**，即可实现多态
 
 ```python
@@ -735,7 +737,7 @@ fun(dog)
 ## 7.1 模块的导入
 ```python
 import 模块名称 [as 别名]
-from 模块名称 import 变量/函数/*  ##通配符
+from 模块名称 import 变量/函数/*  #通配符
 ```
 > 2导入模块中具有同名函数的变量和函数，后导入的会覆盖之前导入的 
 > 如果不想覆盖，使用1打点调用
@@ -744,7 +746,7 @@ from 模块名称 import 变量/函数/*  ##通配符
 包是含有__init__.py文件的文件夹（目录）
 ```python
 import admin.my_admin as a  ##包名.模块名
-a.info()  ##自带__init__.py中的变量、函数w
+a.info()  ##自带__init__.py中的变量、函数
 ```
 ## 8.1 文件操作
 - 打开文件
@@ -761,7 +763,6 @@ a.info()  ##自带__init__.py中的变量、函数w
 ```python
 变量名.close()
 ```
-![None](Markdown_image/ss.jpg)
 ![None](Markdown_image/ssss.jpg)
 ```python
 file.write('abc')
