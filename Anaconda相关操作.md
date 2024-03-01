@@ -1,12 +1,12 @@
 # Anaconda相关操作
 
-## 管理环境
+## 一、管理环境
 
  在Anaconda Prompt上
 
-  ### 1.创建新环境
+  ###    1.创建新环境
 
-`conda create -n env_name packages_names`
+ `  conda create -n env_name packages_names`
 
 - `env_name`即创建的环境名，建议以英文命名且不加空格，
 
@@ -50,7 +50,7 @@
 
   `env_name` 为被删除环境的名称。
 
-  ## 管理包
+  ## 二、管理包
 
   ### 1.查找可供安装的包版本
   #### (1)精确查找
@@ -176,7 +176,7 @@
 
   更新多个指定包，则包名以空格隔开，向后排列。如：`conda update pandas numpy matplotlib`即更新pandas、numpy、matplotlib包。
 
-  ### 6.Anaconda常用命令表
+  ### 三、Anaconda常用命令表
   功能说明	命令
   查看conda版本	`conda --version / conda -V`
   更新conda	`conda update conda`
