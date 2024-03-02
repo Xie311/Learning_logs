@@ -1,10 +1,10 @@
 ## Anaconda配置OpenCV环境
 
-（前情提要：window下python环境无法正常在Vscode终端下安装OpenCV环境）
+（前情提要：由于未知原因本机window下python环境无法正常在Vscode终端下安装OpenCV环境^_^）
 
-##   一、下载OpenCV环境
+##      一、下载OpenCV环境
 
-  首先进入Anaconda Prompt找到自己安装anaconda/Scripts>目录下。
+   首先进入Anaconda Prompt找到自己安装anaconda/Scripts>目录下。
 
 ![img](https://img-blog.csdnimg.cn/379f647fac774891ba89c2778f798545.png)
 
@@ -18,7 +18,7 @@
 
    在cmd命令中输入python
 
-   在输入下面两个命令
+   再输入下面两个命令
 
    1. `import cv2`
    2. `cv2.__version_`
