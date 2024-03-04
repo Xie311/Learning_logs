@@ -390,6 +390,18 @@ void FDCAN1_Update_RXFIFO_Status(FDCAN_HandleTypeDef *hfdcan, FDCAN_HANDLER *fdc
     if (fdcan == &fdcan1) { // 检查FDCAN对象是否为FDCAN1
         fdcan->RXFxS = hfdcan->Instance->RXF0S; // 更新FDCAN1接收FIFO状态到FDCAN对象结构体
     }
+    /**
+     * note：
+    fdcan->RXFxS是FDCAN控制器中RX FIFO的状态寄存器。
+    在这个寄存器中，包含了与 RX FIFO 相关的状态信息，例如已接收到的帧数量、溢出状态等。
+
+    hfdcan->Instance->RXF0S：hfdcan 是 FDCAN 控制器的句柄，Instance 是指向 FDCAN 寄存器组的指针。
+    RXF0S 则是 FDCAN 控制器中 RX FIFO 0 的状态寄存器。通过 hfdcan->Instance->RXF0S，可以访问到 RX FIFO 0 的状态寄存器。
+
+    这行代码的作用是将 RX FIFO 0 的状态寄存器中的值复制给了 FDCAN 控制器中 RX FIFO 的状态寄存器。
+    这样可以使得 fdcan->RXFxS 中保存的状态信息与 RX FIFO 0 的状态信息一致，以便后续进行状态监测和处理。
+    */
+
     // 解析FDCAN1接收FIFO状态中的信息
     fdcan->FxGI = (fdcan->RXFxS >> 8) & 0x1F; // 获取FIFO0读指针
     fdcan->FxPI = (fdcan->RXFxS >> 16) & 0x1F; // 获取FIFO0写指针
