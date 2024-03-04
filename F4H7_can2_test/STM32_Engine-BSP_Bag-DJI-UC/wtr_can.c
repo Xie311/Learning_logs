@@ -338,7 +338,7 @@ void FDCAN1_RX_Filter_Init(void)
      * @note    设置滤波器全局配置
      *          设置标准帧ID，接收的报文ID没有匹配上滤波器时，选择拒绝接收(没有匹配上时,可以选择放入FIFO0或者FIFO1)。
      *          设置拓展帧ID，接收的报文ID没有匹配上滤波器时，选择拒绝接收。
-     *          设置是否拒绝远程标准帧，ENABLE代表拒绝接收。
+     *          设置是否拒绝远程标准帧，ENABLE代表拒绝接收。  //这两个参数用于启用或禁用滤波器。这里设置为DISABLE，表示禁用全局滤波器。
      *          设置是否拒绝远程拓展帧，ENABLE代表拒绝接收。
      */
     if (HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_REJECT, FDCAN_REJECT, DISABLE, DISABLE) != HAL_OK) /* 设置FDCAN1滤波器0全局配置  */
