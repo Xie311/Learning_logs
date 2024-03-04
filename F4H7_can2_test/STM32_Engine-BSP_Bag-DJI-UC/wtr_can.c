@@ -303,9 +303,20 @@ FDCAN_HANDLER fdcan3 = {
 /*************************************用户函数**************************************/
 #if (USE_FDCAN1 == 1)
 /**
- * @brief  设置并初始化FDCAN1滤波器
- * @note   1. FDCAN_HandleTypeDef 对象句柄的成员 RxFifo0 Elmts Nbr设置大于0时，表示启用 RXFIFO0;
+ * @brief  设置并初始化FDCAN1滤波器                                                               //RxFifo0ElmtsNbr是用来设置RX FIFO0的元素数量的成员。
+ * @note   1. FDCAN_HandleTypeDef 对象句柄的成员 RxFifo0 Elmts Nbr设置大于0时，表示启用 RXFIFO0;   //当RxFifo0ElmtsNbr设置为大于0时，表示启用了RX FIFO0。
  * @note   2. 如果启用 RXFIFO0 ,那么滤波器必须关联到 RXFIFO0, 即 FilterConfig 必须赋值 FDCAN_FILTER_TO_RXFIFO0;
+ * 
+ * @note   在FDCAN_HandleTypeDef 这个结构体中，RxFifo0ElmtsNbr是用来设置RX FIFO0的元素数量的成员。当RxFifo0ElmtsNbr设置为大于0时，表示启用了RX FIFO0。
+           RX FIFO0是FDCAN的接收缓冲区之一，用于存储接收到的CAN帧。启用RX FIFO0可以使得接收到的CAN帧按照一定的优先级进行存储，便于后续处理。
+           通常情况下，RX FIFO0用于存储高优先级的CAN帧，而另外的RX FIFO1则用于存储低优先级的CAN帧。
+
+           配置FDCAN的RX FIFO0可以通过以下步骤实现：
+           1.初始化FDCAN模块，包括时钟配置、引脚配置等。
+           2.配置FDCAN的工作模式，包括初始化CAN控制器。
+           3.配置FDCAN的接收器，包括设置过滤器、使能接收中断等。
+           4.配置FDCAN的RX FIFO0，包括设置RX FIFO0的元素数量，使其大于0以启用RX FIFO0。
+           //RX FIFO0 的元素数量表示该 FIFO 中可以存储的 CAN 帧的数量。每个 CAN 帧作为一个元素存储在 FIFO 中.这个数量决定了接收缓冲区的大小
  */
 void FDCAN1_RX_Filter_Init(void)
 {
