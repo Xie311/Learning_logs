@@ -43,16 +43,16 @@ void DJI_Init()
 /**
  * @brief	DJI电机CAN发送函数，电机ID 1/2/3/4
  * @param	hcanx	CAN句柄
- * @param	cmx_iq	发送值，通常为最内环控制的输出值
+ * @param	cmx_iq	发送值，通常为最内环控制的输出值  //代表了对应电机或执行器的输出值，它是根据系统的控制算法和反馈信息计算得出的，用于实现闭环控制系统中的期望动作
  */
 void CanTransmit_DJI_1234(CAN_HandleTypeDef *hcanx, int16_t cm1_iq, int16_t cm2_iq, int16_t cm3_iq, int16_t cm4_iq)
 {
 	CAN_TxHeaderTypeDef TxMessage;
 
 	TxMessage.DLC = 0x08;
-	TxMessage.StdId = 0x200;
-	TxMessage.IDE = CAN_ID_STD;
-	TxMessage.RTR = CAN_RTR_DATA;
+	TxMessage.StdId = 0x200;       //标准帧ID
+	TxMessage.IDE = CAN_ID_STD;    //标准帧
+	TxMessage.RTR = CAN_RTR_DATA;  //数据帧
 
 	uint8_t TxData[8];
 	TxData[0] = (uint8_t)(cm1_iq >> 8);
@@ -81,7 +81,7 @@ void CanTransmit_DJI_5678(CAN_HandleTypeDef *hcanx, int16_t cm5_iq, int16_t cm6_
 	CAN_TxHeaderTypeDef TxMessage;
 
 	TxMessage.DLC = 0x08;
-	TxMessage.StdId = 0x1FF;
+	TxMessage.StdId = 0x1FF;    //标准帧ID
 	TxMessage.IDE = CAN_ID_STD;
 	TxMessage.RTR = CAN_RTR_DATA;
 
@@ -111,9 +111,9 @@ void CanTransmit_DJI_5678(CAN_HandleTypeDef *hcanx, int16_t cm5_iq, int16_t cm6_
 void DJI_Update(DJI_t *motor, uint8_t *fdbData)
 {
 	/* 反馈信息计算 */
-	motor->FdbData.RotorAngle_0_360 = (fdbData[0] << 8 | fdbData[1]) * 360.0f / motor->encoder_resolution; /* unit:degree*/
-	motor->FdbData.rpm = (int16_t)(fdbData[2] << 8 | fdbData[3]);										   /* unit:rpm   */
-	motor->FdbData.current = (int16_t)(fdbData[4] << 8 | fdbData[5]);
+	motor->FdbData.RotorAngle_0_360 = (fdbData[0] << 8 | fdbData[1]) * 360.0f / motor->encoder_resolution;  //电机转子角度 单位 度°/* unit:degree*/
+	motor->FdbData.rpm = (int16_t)(fdbData[2] << 8 | fdbData[3]);	   //电机转子速度						  /* unit:rpm   */
+	motor->FdbData.current = (int16_t)(fdbData[4] << 8 | fdbData[5]);  //电机转矩电流
 	/* 计算数据处理 */
 	/* 更新反馈速度/位置 */
 	motor->Calculate.RotorAngle_0_360_Log[LAST] = motor->Calculate.RotorAngle_0_360_Log[NOW];

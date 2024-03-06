@@ -35,9 +35,9 @@ extern "C"
         struct
         {
             int msg_cnt;            // 收到消息数
-            float RotorAngle_0_360; // 电机转子角度 单位 度° 范围0~360
-            float rpm;              // 电机转子速度，单位 rpm
-            float current;          // 电机转矩电流
+            float RotorAngle_0_360; // 电机转子角度 单位 度° 范围0~360  DATA[0/1] 机械角度值0~8191对应转子机械角度为0~360°
+            float rpm;              // 电机转子速度，单位 rpm          DATA[2/3]
+            float current;          // 电机转矩电流                    DATA[4/5]
         } FdbData;
 
         struct
