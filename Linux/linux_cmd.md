@@ -2,6 +2,31 @@
 
 参考文档：菜鸟教程 [https://www.runoob.com/w3cnote/linux-common-command-2.html](https://www.runoob.com/w3cnote/linux-common-command-2.html)
 
+## 常用指令
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install xxx
+sudo apt remove xxx
+sudo apt --help
+
+chmod 
+chown
+chgrp
+
+su
+passwd
+
+tar -xvf xxxx
+
+cat  
+
+ls | grep xxx
+```
+
+---
+
 **学习Linux，本质上是学习在命令行下熟练使用Linux的各类命令**
 
 * 命令行：即Linux终端（Terminal），是一种命令提示符界面，以字符形式操作系统。
@@ -328,9 +353,7 @@ sudo 其他命令
 
 在其他命令前带上sudo可为这一条命令临时赋予root权限，但是要想使用sudo需要为普通用户配置sudo认证：
 
-切换到root用户，执行visudo命令，会自动打开/etc/sudoers                  //但是为什么我切换不了..........
-
-在文件最后添加：zyt_brain ALL=(ALL)		NOPASSWD:ALL
+切换到root用户，执行visudo命令，会自动打开/etc/sudoers                在文件最后添加：xxxALL=(ALL)		NOPASSWD:ALL
 
 最后通过wq保存
 
