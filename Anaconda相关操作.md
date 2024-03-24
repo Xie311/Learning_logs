@@ -17,8 +17,7 @@
   （2）如果要在新创建的环境中创建多个包，则直接在 package_names 后以空格隔开，添加多个包名即可。如：conda create -n python3 python=3.5 numpy pandas。即创建一个名为“python3”的环境，环境中安装版本为3.5的python，同时也安装了numpy和pandas。
 
   -n为-name。
-
-  ### 2.切换环境
+### 2.切换环境
 
   `activate env-name`
   (1)env_name 换成创建的环境名。如果创建环境后安装Python时没有指定Python的版本，那么将会安装与Anaconda版本相同的Python版本，即如果安装Anaconda第3版，则会自动安装Python 3.x。
@@ -193,7 +192,7 @@
   指定环境安装包	`conda install --n env_name package_names`
   指定版本	`conda install --n env_name package_name=version`
   在当前环境中安装包	`conda install package_names`
-  pip安装	`pip install package_names conda`装不了的或没有的，可用pip来安装
+  pip安装	`pip install package_names` conda装不了的或没有的，可用pip来安装
 
   
 

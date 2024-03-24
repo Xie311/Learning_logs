@@ -21,10 +21,9 @@
    再输入下面两个命令
 
    1. `import cv2`
-   2. `cv2.__version_`
-          
+      2. `cv2.__version_`
 
-  ![img](https://img-blog.csdnimg.cn/1c7b8911336e4fbe806729638e04c008.png)
+![img](https://img-blog.csdnimg.cn/1c7b8911336e4fbe806729638e04c008.png)
 
 ##  4.VSCODE内选择相应python解释器
 
@@ -126,8 +125,6 @@ cv2.namedWindow('image1', cv2.WINDOW_NORMAL)
 cv2.imshow('image1', img1)
 ```
 
-
-
 ### 图像的保存
 
 使用`cv2.imwrite()`函数进行图像的保存
@@ -140,8 +137,6 @@ cv2.imshow('image1', img1)
 """
 cv2.imwrite()
 ```
-
-
 
 ## 2. 视频的获取和保存
 
@@ -162,7 +157,7 @@ while(True):
     ret,frame = cap.read()    #可以给空参数（一般设置为25ms）
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     cv2.imshow('frame',gray)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):  #cv2.waitkey()参数为1而非零，否则x
         break
      #&0xFF 是为了确保只关心 ASCII 值的最后八位（在某些操作系统上，cv2.waitKey() 返回的值可能包含其他信息）
     
