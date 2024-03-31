@@ -1,7 +1,5 @@
 # EIDE 工作流
 
-> Forked from lyn_Github
-
 `CubeMX` - `VS Code` - `EIDE` 工作流 （Modified By Liam  2023-12-18）
 
 ## 前置环境准备：
@@ -49,11 +47,15 @@
 
 <img src="EIDE工作流.assets/image-20231218104033441.png" alt="image-20231218104033441" style="zoom:67%;" />
 
-生成之后，注意观察，`startup_stm23f427xx.s`  文件中需要有几百行代码。（有时候CubeMX抽风，会生成错的）
+**生成之后，注意观察，`startup_stm23f427xx.s`  文件中需要有几百行代码。（有时候CubeMX抽风，会生成错的）**
 
 
 
 ### 创建 EIDE 空项目
+
+> VSCode内不要启用MakeFile拓展！！！！！！！！!  
+>
+> 否则startup文件会寄掉  出现1k+条报错
 
 用 VS Code 打开刚才生成的工程目录
 
@@ -97,22 +99,22 @@ EIDE - 新建项目 - 空项目 - Cortex-M - 输入项目名称（需要和 Cube
 
 项目资源 - 右键 - 添加源文件夹，选择普通文件夹
 
-![image-20231218105042860](/EIDE工作流.assets/image-20231218105042860.png)
+![image-20231218105042860](EIDE工作流.assets/image-20231218105042860.png)
 
 添加 `Core`, `Drivers` 等所有包含 .c 文件的文件夹
 
-![image-20231218105139968](/EIDE工作流.assets/image-20231218105139968.png)
+![image-20231218105139968](EIDE工作流.assets/image-20231218105139968.png)
 
 添加完成后：
 
-![image-20231218105203812](/EIDE工作流.assets/image-20231218105203812.png)
+![image-20231218105203812](EIDE工作流.assets/image-20231218105203812.png)
 
 #### 配置 GCC 
 
 配置以下部分：
 
 - CPU 类型：可以在 `CubeMX`、`百度` 或者生成的 `Makefile` 里查到
-- 链接脚本路径：填写工程目录下 `STM32xxxx_FLASH.ld` 文件的相对路径（不同芯片文件不同）
+- 链接脚本路径：填写工程目录下 `STM32xxxx_FLASH.ld` 文件的相对路径（右键文件复制，不同芯片文件不同）
 - 对于有 FPU 的 CPU：
   - 在硬件浮点选项中选 `single` （对于 Cortex-M4）
   - 在构建器选项 - 全局选项 - 硬件浮点 ABI 选 hard（记得保存）
@@ -149,6 +151,19 @@ EIDE - 新建项目 - 空项目 - Cortex-M - 输入项目名称（需要和 Cube
 > ## （==强烈建议==）如果设置中勾选了 `EIDE.Source Tree: Auto Search Include Path`（如下图），那么 EIDE 会自动搜索项目资源中添加的文件夹，这里就不用手动填入了
 
 ![1662708868034](EIDE工作流.assets/1662708868034.png)
+
+> **自动检索在3.8.3版本就改为了默认关闭，详见https://discuss.em-ide.com/d/356/2。**
+
+虽然新项目是默认关闭自动检索，但是我们也可以手动打开。
+
+### 进入资源管理器，打开工作区，打开 .code-workspace文件 ，在settings下添加这两句函数，将参数改为true保存即可，需要重启VSCode才能生效。
+
+```C
+        "EIDE.SourceTree.AutoSearchIncludePath": true,
+        "EIDE.SourceTree.AutoSearchObjFile": true,
+```
+
+
 
 > ## 如果不进行上面的步骤，否则参考 Makefile 填入  这里：
 
