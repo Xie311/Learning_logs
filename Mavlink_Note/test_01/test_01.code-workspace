@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "stdio.h": "c",
+            "main.h": "c"
+        }
+    },
+    "extensions": {}
+}

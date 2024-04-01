@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>3</version>
+  <messages>
+    <message id="1" name="SPEED">
+      <description>Test all field types</description>
+      <field type="double" name="vx">x speed</field>
+      <field type="double" name="vy">y speed</field>
+      <field type="double" name="vz">z speed</field>
+    </message>
+  </messages>
+</mavlink>
