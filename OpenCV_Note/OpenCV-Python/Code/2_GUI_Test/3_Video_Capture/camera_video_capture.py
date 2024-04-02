@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if cap.isOpened() == False:
     cap.open()
@@ -20,7 +20,7 @@ out = cv2.VideoWriter('out.avi',fourcc,20.0,(640,480))
 while (True):
     ret, frame = cap.read()
     if ret == True:
-        frame = cv2.flip(frame, 0)  #这行代码将读取的帧水平翻转
+        #frame = cv2.flip(frame, 0)  #这行代码将读取的帧水平翻转
         # gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)  将彩色图像转换为灰度图像
         
         cv2.imshow('video',frame)

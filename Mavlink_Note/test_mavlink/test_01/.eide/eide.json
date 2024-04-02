@@ -5,7 +5,8 @@
   "srcDirs": [
     ".eide/deps",
     "Core",
-    "Drivers"
+    "Drivers",
+    "UC"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",

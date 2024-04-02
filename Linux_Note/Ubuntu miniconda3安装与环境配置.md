@@ -23,7 +23,7 @@ or清华源下载
 
 > /opt/miniconda3
 
-询问是否在[shell](https://so.csdn.net/so/search?q=shell&spm=1001.2101.3001.7020)中将miniconda初始化。由于还要安装ros2，所以选择“no”，避免第三方哭的冲突。
+询问是否在[shell](https://so.csdn.net/so/search?q=shell&spm=1001.2101.3001.7020)中将miniconda初始化。由于还要安装ros2，所以选择“no”，避免第三方的冲突。
 
 #### 2.修改配置文件
 
@@ -44,6 +44,16 @@ or清华源下载
 `conda --version`
 
 ### 三、激活及下载OpenCV环境
+
+```
+conda create -n python3.9 python=3.9
+
+activate python3.9
+
+pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+
 
 使用` source activate `命令或 `conda activate `激活虚拟环境
 
