@@ -114,7 +114,7 @@ elif key == ord('s'):                       # waitKey 函数可以返回键值�
     cv2.destroyAllWindows()
 ```
 
-> 可以先创建窗口，再加载图像  (否则`imshow（）`会创建一个窗口，窗口大小依赖于图片大小)
+> 可以先创建窗口，再加载图像  (**否则`imshow（）`会创建一个窗口**，窗口大小依赖于图片大小)
 >
 > 此时可以决定窗口是否可以调整大小。使用`cv2.namedWindow()`函数，其默认值为`cv2.WINDOW_AUTOSIZE`，调整成`cv2.WINDOW_NORMOL`时可以在打开的窗口中手动调整窗口大小。
 
