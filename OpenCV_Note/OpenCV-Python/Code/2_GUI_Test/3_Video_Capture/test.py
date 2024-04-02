@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 初始化 VideoCapture 对象，使用外置摄像头
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while(True):
     ret,frame = cap.read(25)    #可以给空参数（一般设置为25ms）
