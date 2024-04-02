@@ -1,7 +1,7 @@
 import cv2
 
 # 打开笔记本电脑摄像头
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(2)
 
 # 检查摄像头是否成功打开
 if not cap.isOpened():

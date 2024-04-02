@@ -60,12 +60,17 @@ pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 `source activate base`
 `conda activate base`
 
+---
+
 取消自动进入base环境指令
 
 `conda config --set auto_activate_base false`
 如果希望自动进入，输入指令如下
 
 `conda config --set auto_activate_base true`
+
+---
+
 镜像源安装opencv
 
 `pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple`

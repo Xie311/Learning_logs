@@ -2,11 +2,13 @@
 
 （前情提要：由于未知原因本机window下python环境无法正常在Vscode终端下安装OpenCV环境^_^）
 
+> Ubuntu下在miniconda中配置Open环境详见`Study_log/Linux_Note/Ubuntu miniconda3安装与环境配置.md`
+
 ##      1.下载OpenCV环境
 
    首先进入Anaconda Prompt找到自己安装anaconda/Scripts>目录下。
 
-![img](https://img-blog.csdnimg.cn/379f647fac774891ba89c2778f798545.png)
+![img](https://img-blog.csdnimg.cn/379f647fac774891ba89c2778f798545.png)	
 
 1. `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python==3.4.1.15`
 
@@ -40,6 +42,8 @@ cv2.namedWindow('img', cv2.WINDOW_AUTOSIZE)
 cv2.imshow('img', img)
 cv2.waitKey(0)
 ```
+
+> 附：查看USB摄像头设备信息：`sudo v4l2-ctl --list-devices`
 
 # 二、GUI操作
 
