@@ -1,0 +1,51 @@
+[4.948s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_service': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/build/learning_service/prefix_override:/home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages:/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_service build --build-base /home/x311/town_ws/src/build/learning_service/build install --record /home/x311/town_ws/src/build/learning_service/install.log --single-version-externally-managed
+[6.110s] running egg_info
+[6.112s] creating ../../build/learning_service/learning_service.egg-info
+[6.112s] writing ../../build/learning_service/learning_service.egg-info/PKG-INFO
+[6.112s] writing dependency_links to ../../build/learning_service/learning_service.egg-info/dependency_links.txt
+[6.113s] writing entry points to ../../build/learning_service/learning_service.egg-info/entry_points.txt
+[6.119s] writing requirements to ../../build/learning_service/learning_service.egg-info/requires.txt
+[6.119s] writing top-level names to ../../build/learning_service/learning_service.egg-info/top_level.txt
+[6.119s] writing manifest file '../../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[6.132s] reading manifest file '../../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[6.138s] writing manifest file '../../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[6.138s] running build
+[6.138s] running build_py
+[6.138s] creating /home/x311/town_ws/src/build/learning_service/build
+[6.139s] creating /home/x311/town_ws/src/build/learning_service/build/lib
+[6.139s] creating /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.139s] copying learning_service/service_adder_server.py -> /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.140s] copying learning_service/service_object_server.py -> /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.147s] copying learning_service/service_adder_client.py -> /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.148s] copying learning_service/service_object_client.py -> /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.154s] copying learning_service/__init__.py -> /home/x311/town_ws/src/build/learning_service/build/lib/learning_service
+[6.155s] running install
+[6.155s] running install_lib
+[6.155s] creating /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.164s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.164s]   warnings.warn(
+[6.164s] copying /home/x311/town_ws/src/build/learning_service/build/lib/learning_service/service_adder_server.py -> /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.165s] copying /home/x311/town_ws/src/build/learning_service/build/lib/learning_service/service_object_server.py -> /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.165s] copying /home/x311/town_ws/src/build/learning_service/build/lib/learning_service/service_adder_client.py -> /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.165s] copying /home/x311/town_ws/src/build/learning_service/build/lib/learning_service/service_object_client.py -> /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.166s] copying /home/x311/town_ws/src/build/learning_service/build/lib/learning_service/__init__.py -> /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service
+[6.166s] byte-compiling /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service/service_adder_server.py to service_adder_server.cpython-310.pyc
+[6.166s] byte-compiling /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service/service_object_server.py to service_object_server.cpython-310.pyc
+[6.167s] byte-compiling /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service/service_adder_client.py to service_adder_client.cpython-310.pyc
+[6.167s] byte-compiling /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service/service_object_client.py to service_object_client.cpython-310.pyc
+[6.167s] byte-compiling /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service/__init__.py to __init__.cpython-310.pyc
+[6.170s] running install_data
+[6.170s] creating /home/x311/town_ws/src/install/learning_service/share/ament_index
+[6.170s] creating /home/x311/town_ws/src/install/learning_service/share/ament_index/resource_index
+[6.171s] creating /home/x311/town_ws/src/install/learning_service/share/ament_index/resource_index/packages
+[6.172s] copying resource/learning_service -> /home/x311/town_ws/src/install/learning_service/share/ament_index/resource_index/packages
+[6.172s] copying package.xml -> /home/x311/town_ws/src/install/learning_service/share/learning_service
+[6.172s] running install_egg_info
+[6.185s] Copying ../../build/learning_service/learning_service.egg-info to /home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages/learning_service-0.0.0-py3.10.egg-info
+[6.185s] running install_scripts
+[6.293s] Installing service_adder_client script to /home/x311/town_ws/src/install/learning_service/lib/learning_service
+[6.294s] Installing service_adder_server script to /home/x311/town_ws/src/install/learning_service/lib/learning_service
+[6.294s] Installing service_object_client script to /home/x311/town_ws/src/install/learning_service/lib/learning_service
+[6.294s] Installing service_object_server script to /home/x311/town_ws/src/install/learning_service/lib/learning_service
+[6.295s] writing list of installed files to '/home/x311/town_ws/src/build/learning_service/install.log'
+[6.359s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_service' returned '0': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/build/learning_service/prefix_override:/home/x311/town_ws/src/install/learning_service/lib/python3.10/site-packages:/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_service build --build-base /home/x311/town_ws/src/build/learning_service/build install --record /home/x311/town_ws/src/build/learning_service/install.log --single-version-externally-managed

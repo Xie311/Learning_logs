@@ -1,0 +1,47 @@
+[5.426s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_launch': PYTHONPATH=/home/x311/town_ws/src/build/learning_launch/prefix_override:/home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_launch build --build-base /home/x311/town_ws/src/build/learning_launch/build install --record /home/x311/town_ws/src/build/learning_launch/install.log --single-version-externally-managed
+[6.803s] running egg_info
+[6.807s] creating ../../build/learning_launch/learning_launch.egg-info
+[6.814s] writing ../../build/learning_launch/learning_launch.egg-info/PKG-INFO
+[6.814s] writing dependency_links to ../../build/learning_launch/learning_launch.egg-info/dependency_links.txt
+[6.818s] writing entry points to ../../build/learning_launch/learning_launch.egg-info/entry_points.txt
+[6.819s] writing requirements to ../../build/learning_launch/learning_launch.egg-info/requires.txt
+[6.819s] writing top-level names to ../../build/learning_launch/learning_launch.egg-info/top_level.txt
+[6.820s] writing manifest file '../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[6.831s] reading manifest file '../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[6.832s] writing manifest file '../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[6.832s] running build
+[6.832s] running build_py
+[6.833s] creating /home/x311/town_ws/src/build/learning_launch/build
+[6.850s] creating /home/x311/town_ws/src/build/learning_launch/build/lib
+[6.853s] creating /home/x311/town_ws/src/build/learning_launch/build/lib/learning_launch
+[6.854s] copying learning_launch/__init__.py -> /home/x311/town_ws/src/build/learning_launch/build/lib/learning_launch
+[6.856s] running install
+[6.856s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.858s]   warnings.warn(
+[6.866s] running install_lib
+[6.866s] creating /home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages/learning_launch
+[6.866s] copying /home/x311/town_ws/src/build/learning_launch/build/lib/learning_launch/__init__.py -> /home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages/learning_launch
+[6.867s] byte-compiling /home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages/learning_launch/__init__.py to __init__.cpython-310.pyc
+[6.879s] running install_data
+[6.882s] creating /home/x311/town_ws/src/install/learning_launch/share/ament_index
+[6.882s] creating /home/x311/town_ws/src/install/learning_launch/share/ament_index/resource_index
+[6.882s] creating /home/x311/town_ws/src/install/learning_launch/share/ament_index/resource_index/packages
+[6.884s] copying resource/learning_launch -> /home/x311/town_ws/src/install/learning_launch/share/ament_index/resource_index/packages
+[6.886s] copying package.xml -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch
+[6.886s] creating /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.888s] copying launch/remapping.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.889s] copying launch/namespaces.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.890s] copying launch/parameters.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.891s] copying launch/simple.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.891s] copying launch/parameters_yaml.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.892s] copying launch/rviz.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.903s] copying launch/parameters_nonamespace.launch.py -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/launch
+[6.903s] creating /home/x311/town_ws/src/install/learning_launch/share/learning_launch/config
+[6.903s] copying config/turtlesim.yaml -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/config
+[6.904s] creating /home/x311/town_ws/src/install/learning_launch/share/learning_launch/rviz
+[6.904s] copying rviz/turtle_rviz.rviz -> /home/x311/town_ws/src/install/learning_launch/share/learning_launch/rviz
+[6.904s] running install_egg_info
+[6.910s] Copying ../../build/learning_launch/learning_launch.egg-info to /home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages/learning_launch-0.0.0-py3.10.egg-info
+[6.914s] running install_scripts
+[7.074s] writing list of installed files to '/home/x311/town_ws/src/build/learning_launch/install.log'
+[7.885s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_launch' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_launch/prefix_override:/home/x311/town_ws/src/install/learning_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_launch build --build-base /home/x311/town_ws/src/build/learning_launch/build install --record /home/x311/town_ws/src/build/learning_launch/install.log --single-version-externally-managed

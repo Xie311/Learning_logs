@@ -1,0 +1,53 @@
+[4.484s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_tf': PYTHONPATH=/home/x311/town_ws/src/build/learning_tf/prefix_override:/home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_tf build --build-base /home/x311/town_ws/src/build/learning_tf/build install --record /home/x311/town_ws/src/build/learning_tf/install.log --single-version-externally-managed
+[5.884s] running egg_info
+[5.892s] creating ../../build/learning_tf/learning_tf.egg-info
+[5.896s] writing ../../build/learning_tf/learning_tf.egg-info/PKG-INFO
+[5.897s] writing dependency_links to ../../build/learning_tf/learning_tf.egg-info/dependency_links.txt
+[5.897s] writing entry points to ../../build/learning_tf/learning_tf.egg-info/entry_points.txt
+[5.897s] writing requirements to ../../build/learning_tf/learning_tf.egg-info/requires.txt
+[5.898s] writing top-level names to ../../build/learning_tf/learning_tf.egg-info/top_level.txt
+[5.898s] writing manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[5.921s] reading manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[5.922s] writing manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[5.922s] running build
+[5.923s] running build_py
+[5.923s] creating /home/x311/town_ws/src/build/learning_tf/build
+[5.923s] creating /home/x311/town_ws/src/build/learning_tf/build/lib
+[5.924s] creating /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.924s] copying learning_tf/turtle_tf_broadcaster.py -> /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.929s] copying learning_tf/static_tf_broadcaster.py -> /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.929s] copying learning_tf/tf_listener.py -> /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.929s] copying learning_tf/__init__.py -> /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.929s] copying learning_tf/turtle_following.py -> /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf
+[5.930s] running install
+[5.930s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.930s]   warnings.warn(
+[5.930s] running install_lib
+[5.931s] creating /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.931s] copying /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf/turtle_tf_broadcaster.py -> /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.931s] copying /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf/static_tf_broadcaster.py -> /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.931s] copying /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf/tf_listener.py -> /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.938s] copying /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf/__init__.py -> /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.939s] copying /home/x311/town_ws/src/build/learning_tf/build/lib/learning_tf/turtle_following.py -> /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf
+[5.939s] byte-compiling /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf/turtle_tf_broadcaster.py to turtle_tf_broadcaster.cpython-310.pyc
+[5.944s] byte-compiling /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf/static_tf_broadcaster.py to static_tf_broadcaster.cpython-310.pyc
+[5.945s] byte-compiling /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf/tf_listener.py to tf_listener.cpython-310.pyc
+[5.958s] byte-compiling /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf/__init__.py to __init__.cpython-310.pyc
+[5.958s] byte-compiling /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf/turtle_following.py to turtle_following.cpython-310.pyc
+[5.959s] running install_data
+[5.959s] creating /home/x311/town_ws/src/install/learning_tf/share/ament_index
+[5.959s] creating /home/x311/town_ws/src/install/learning_tf/share/ament_index/resource_index
+[5.960s] creating /home/x311/town_ws/src/install/learning_tf/share/ament_index/resource_index/packages
+[5.960s] copying resource/learning_tf -> /home/x311/town_ws/src/install/learning_tf/share/ament_index/resource_index/packages
+[5.960s] copying package.xml -> /home/x311/town_ws/src/install/learning_tf/share/learning_tf
+[5.960s] creating /home/x311/town_ws/src/install/learning_tf/share/learning_tf/launch
+[5.961s] copying launch/turtle_following_demo.launch.py -> /home/x311/town_ws/src/install/learning_tf/share/learning_tf/launch
+[5.961s] running install_egg_info
+[5.961s] Copying ../../build/learning_tf/learning_tf.egg-info to /home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages/learning_tf-0.0.0-py3.10.egg-info
+[5.985s] running install_scripts
+[6.056s] Installing static_tf_broadcaster script to /home/x311/town_ws/src/install/learning_tf/lib/learning_tf
+[6.056s] Installing tf_listener script to /home/x311/town_ws/src/install/learning_tf/lib/learning_tf
+[6.056s] Installing turtle_following script to /home/x311/town_ws/src/install/learning_tf/lib/learning_tf
+[6.057s] Installing turtle_tf_broadcaster script to /home/x311/town_ws/src/install/learning_tf/lib/learning_tf
+[6.057s] writing list of installed files to '/home/x311/town_ws/src/build/learning_tf/install.log'
+[6.197s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_tf' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_tf/prefix_override:/home/x311/town_ws/src/install/learning_tf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_tf build --build-base /home/x311/town_ws/src/build/learning_tf/build install --record /home/x311/town_ws/src/build/learning_tf/install.log --single-version-externally-managed

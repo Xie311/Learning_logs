@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000619] (-) JobUnselected: {'identifier': 'learning_action'}
+[0.000798] (-) JobUnselected: {'identifier': 'learning_action_cpp'}
+[0.001229] (-) JobUnselected: {'identifier': 'learning_cv'}
+[0.001398] (-) JobUnselected: {'identifier': 'learning_gazebo_fortress'}
+[0.001889] (-) JobUnselected: {'identifier': 'learning_interface'}
+[0.002052] (-) JobUnselected: {'identifier': 'learning_launch'}
+[0.002198] (-) JobUnselected: {'identifier': 'learning_node'}
+[0.002275] (-) JobUnselected: {'identifier': 'learning_node_cpp'}
+[0.002411] (-) JobUnselected: {'identifier': 'learning_parameter'}
+[0.002547] (-) JobUnselected: {'identifier': 'learning_parameter_cpp'}
+[0.002685] (-) JobUnselected: {'identifier': 'learning_pkg_c'}
+[0.002821] (-) JobUnselected: {'identifier': 'learning_pkg_python'}
+[0.002961] (-) JobUnselected: {'identifier': 'learning_qos'}
+[0.003032] (-) JobUnselected: {'identifier': 'learning_service'}
+[0.003161] (-) JobUnselected: {'identifier': 'learning_service_cpp'}
+[0.003298] (-) JobUnselected: {'identifier': 'learning_tf'}
+[0.003436] (-) JobUnselected: {'identifier': 'learning_tf_cpp'}
+[0.003628] (-) JobUnselected: {'identifier': 'learning_topic'}
+[0.003767] (-) JobUnselected: {'identifier': 'learning_topic_cpp'}
+[0.003933] (-) JobUnselected: {'identifier': 'learning_urdf'}
+[0.004076] (-) JobUnselected: {'identifier': 'village_li'}
+[0.004155] (-) JobUnselected: {'identifier': 'village_wang'}
+[0.004230] (learning_gazebo) JobQueued: {'identifier': 'learning_gazebo', 'dependencies': OrderedDict()}
+[0.004305] (learning_gazebo) JobStarted: {'identifier': 'learning_gazebo'}
+[0.097136] (-) TimerEvent: {}
+[0.199273] (-) TimerEvent: {}
+[0.300166] (-) TimerEvent: {}
+[0.401453] (-) TimerEvent: {}
+[0.502577] (-) TimerEvent: {}
+[0.603515] (-) TimerEvent: {}
+[0.704348] (-) TimerEvent: {}
+[0.805444] (-) TimerEvent: {}
+[0.906346] (-) TimerEvent: {}
+[1.007208] (-) TimerEvent: {}
+[1.108003] (-) TimerEvent: {}
+[1.208778] (-) TimerEvent: {}
+[1.309733] (-) TimerEvent: {}
+[1.410587] (-) TimerEvent: {}
+[1.512575] (-) TimerEvent: {}
+[1.613352] (-) TimerEvent: {}
+[1.714091] (-) TimerEvent: {}
+[1.814933] (-) TimerEvent: {}
+[1.915600] (-) TimerEvent: {}
+[2.016765] (-) TimerEvent: {}
+[2.117611] (-) TimerEvent: {}
+[2.218484] (-) TimerEvent: {}
+[2.319321] (-) TimerEvent: {}
+[2.420138] (-) TimerEvent: {}
+[2.520867] (-) TimerEvent: {}
+[2.621676] (-) TimerEvent: {}
+[2.701413] (learning_gazebo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/learning_gazebo', 'build', '--build-base', '/home/x311/town_ws/src/build/learning_gazebo/build', 'install', '--record', '/home/x311/town_ws/src/build/learning_gazebo/install.log', '--single-version-externally-managed'], 'cwd': '/home/x311/town_ws/src/ros2_21_tutorials/learning_gazebo', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'x311', 'LC_TIME': 'zh_CN.UTF-8', 'GIO_MODULE_DIR': '/home/x311/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/x311', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/x311/town_ws', 'TERM_PROGRAM_VERSION': '1.86.2', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/x311/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/152/usr/share/code/code', 'MANAGERPID': '1606', 'SYSTEMD_EXEC_PID': '1823', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '18974', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'x311', 'JOURNAL_STREAM': '8:36472', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'x311', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/x311-virtual-machine:@/tmp/.ICE-unix/1767,unix/x311-virtual-machine:/tmp/.ICE-unix/1767', 'GTK_EXE_PREFIX': '/snap/code/152/usr', 'INVOCATION_ID': '8c5c3d021904412e9c08bc983bd6540f', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/152/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6M75I2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-be8540874d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/x311/snap/code/152/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/x311/town_ws/src/build/learning_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/x311/snap/code/152/.local/share:/home/x311/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/x311/town_ws/src/build/learning_gazebo/prefix_override:/home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1'}, 'shell': False}
+[2.722142] (-) TimerEvent: {}
+[2.823043] (-) TimerEvent: {}
+[2.923719] (-) TimerEvent: {}
+[3.024545] (-) TimerEvent: {}
+[3.125263] (-) TimerEvent: {}
+[3.226113] (-) TimerEvent: {}
+[3.326875] (-) TimerEvent: {}
+[3.427472] (-) TimerEvent: {}
+[3.468261] (learning_gazebo) StdoutLine: {'line': b'running egg_info\n'}
+[3.469708] (learning_gazebo) StdoutLine: {'line': b'creating ../../build/learning_gazebo/learning_gazebo.egg-info\n'}
+[3.470143] (learning_gazebo) StdoutLine: {'line': b'writing ../../build/learning_gazebo/learning_gazebo.egg-info/PKG-INFO\n'}
+[3.470924] (learning_gazebo) StdoutLine: {'line': b'writing dependency_links to ../../build/learning_gazebo/learning_gazebo.egg-info/dependency_links.txt\n'}
+[3.471281] (learning_gazebo) StdoutLine: {'line': b'writing entry points to ../../build/learning_gazebo/learning_gazebo.egg-info/entry_points.txt\n'}
+[3.471591] (learning_gazebo) StdoutLine: {'line': b'writing requirements to ../../build/learning_gazebo/learning_gazebo.egg-info/requires.txt\n'}
+[3.471890] (learning_gazebo) StdoutLine: {'line': b'writing top-level names to ../../build/learning_gazebo/learning_gazebo.egg-info/top_level.txt\n'}
+[3.472382] (learning_gazebo) StdoutLine: {'line': b"writing manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'\n"}
+[3.480151] (learning_gazebo) StdoutLine: {'line': b"reading manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'\n"}
+[3.484883] (learning_gazebo) StdoutLine: {'line': b"writing manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'\n"}
+[3.485558] (learning_gazebo) StdoutLine: {'line': b'running build\n'}
+[3.485739] (learning_gazebo) StdoutLine: {'line': b'running build_py\n'}
+[3.485976] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/build/learning_gazebo/build\n'}
+[3.486255] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/build/learning_gazebo/build/lib\n'}
+[3.486514] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo\n'}
+[3.486821] (learning_gazebo) StdoutLine: {'line': b'copying learning_gazebo/__init__.py -> /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo\n'}
+[3.487693] (learning_gazebo) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.488200] (learning_gazebo) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.488536] (learning_gazebo) StdoutLine: {'line': b'running install\n'}
+[3.490084] (learning_gazebo) StdoutLine: {'line': b'running install_lib\n'}
+[3.491368] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo\n'}
+[3.491765] (learning_gazebo) StdoutLine: {'line': b'copying /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo/__init__.py -> /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo\n'}
+[3.493338] (learning_gazebo) StdoutLine: {'line': b'byte-compiling /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo/__init__.py to __init__.cpython-310.pyc\n'}
+[3.494069] (learning_gazebo) StdoutLine: {'line': b'running install_data\n'}
+[3.495392] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index\n'}
+[3.495833] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index\n'}
+[3.496195] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index/packages\n'}
+[3.496449] (learning_gazebo) StdoutLine: {'line': b'copying resource/learning_gazebo -> /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index/packages\n'}
+[3.496737] (learning_gazebo) StdoutLine: {'line': b'copying package.xml -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo\n'}
+[3.497046] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.497375] (learning_gazebo) StdoutLine: {'line': b'copying launch/mbot_laser.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.497689] (learning_gazebo) StdoutLine: {'line': b'copying launch/load_mbot_rgbd_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.501397] (learning_gazebo) StdoutLine: {'line': b'copying launch/load_urdf_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.501722] (learning_gazebo) StdoutLine: {'line': b'copying launch/load_mbot_laser_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.502540] (learning_gazebo) StdoutLine: {'line': b'copying launch/mbot_camera.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.502885] (learning_gazebo) StdoutLine: {'line': b'copying launch/load_mbot_camera_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.503285] (learning_gazebo) StdoutLine: {'line': b'copying launch/mbot.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.503579] (learning_gazebo) StdoutLine: {'line': b'copying launch/mbot_rgbd.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch\n'}
+[3.504096] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.504616] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_base_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.505027] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_with_rgbd_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.505434] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.505679] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_with_kinect_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.506034] (learning_gazebo) StdoutLine: {'line': b'copying urdf/two_wheeled_robot_nav2.urdf -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.506270] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_with_camera_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.506588] (learning_gazebo) StdoutLine: {'line': b'copying urdf/mbot_with_laser_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf\n'}
+[3.506819] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes\n'}
+[3.507072] (learning_gazebo) StdoutLine: {'line': b'copying meshes/kinect.jpg -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes\n'}
+[3.507315] (learning_gazebo) StdoutLine: {'line': b'copying meshes/kinect.tga -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes\n'}
+[3.507550] (learning_gazebo) StdoutLine: {'line': b'copying meshes/kinect.dae -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes\n'}
+[3.508731] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors\n'}
+[3.509260] (learning_gazebo) StdoutLine: {'line': b'copying urdf/sensors/lidar_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors\n'}
+[3.509650] (learning_gazebo) StdoutLine: {'line': b'copying urdf/sensors/rgbd_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors\n'}
+[3.509958] (learning_gazebo) StdoutLine: {'line': b'copying urdf/sensors/kinect_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors\n'}
+[3.510449] (learning_gazebo) StdoutLine: {'line': b'copying urdf/sensors/camera_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors\n'}
+[3.511029] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds\n'}
+[3.511447] (learning_gazebo) StdoutLine: {'line': b'copying worlds/neighborhood.world -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds\n'}
+[3.512523] (learning_gazebo) StdoutLine: {'line': b'copying worlds/empty_world.model -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds\n'}
+[3.513066] (learning_gazebo) StdoutLine: {'line': b'creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/rviz\n'}
+[3.513452] (learning_gazebo) StdoutLine: {'line': b'copying rviz/urdf_gazebo_config.rviz -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/rviz\n'}
+[3.514799] (learning_gazebo) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.520239] (learning_gazebo) StdoutLine: {'line': b'Copying ../../build/learning_gazebo/learning_gazebo.egg-info to /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo-0.0.0-py3.10.egg-info\n'}
+[3.523868] (learning_gazebo) StdoutLine: {'line': b'running install_scripts\n'}
+[3.527852] (-) TimerEvent: {}
+[3.582334] (learning_gazebo) StdoutLine: {'line': b"writing list of installed files to '/home/x311/town_ws/src/build/learning_gazebo/install.log'\n"}
+[3.628135] (-) TimerEvent: {}
+[3.638472] (learning_gazebo) CommandEnded: {'returncode': 0}
+[3.728429] (-) TimerEvent: {}
+[3.828682] (learning_gazebo) JobEnded: {'identifier': 'learning_gazebo', 'rc': 0}
+[3.832239] (-) TimerEvent: {}
+[3.832535] (-) EventReactorShutdown: {}

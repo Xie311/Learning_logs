@@ -1,0 +1,68 @@
+[2.569s] Invoking command in '/home/x311/town_ws/src/build/learning_parameter_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_parameter_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_parameter_cpp
+[3.255s] -- The C compiler identification is GNU 11.4.0
+[4.231s] -- The CXX compiler identification is GNU 11.4.0
+[4.370s] -- Detecting C compiler ABI info
+[5.809s] -- Detecting C compiler ABI info - done
+[5.877s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.890s] -- Detecting C compile features
+[5.891s] -- Detecting C compile features - done
+[5.933s] -- Detecting CXX compiler ABI info
+[6.822s] -- Detecting CXX compiler ABI info - done
+[6.859s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.859s] -- Detecting CXX compile features
+[6.861s] -- Detecting CXX compile features - done
+[6.892s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.684s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[9.419s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[9.990s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[10.093s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[10.278s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[10.389s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.511s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.385s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[11.407s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[12.902s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[13.251s] -- Found FastRTPS: /opt/ros/humble/include  
+[13.620s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.695s] -- Looking for pthread.h
+[14.866s] -- Looking for pthread.h - found
+[14.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[16.050s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[16.058s] -- Found Threads: TRUE  
+[17.656s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.333s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.333s] -- Configured cppcheck include dirs: 
+[18.333s] -- Configured cppcheck exclude dirs and/or files: 
+[18.335s] -- Added test 'lint_cmake' to check CMake code style
+[18.352s] -- Added test 'uncrustify' to check C / C++ code style
+[18.353s] -- Configured uncrustify additional arguments: 
+[18.353s] -- Added test 'xmllint' to check XML markup files
+[18.358s] -- Configuring done
+[18.473s] -- Generating done
+[18.493s] -- Build files have been written to: /home/x311/town_ws/src/build/learning_parameter_cpp
+[18.588s] Invoked command in '/home/x311/town_ws/src/build/learning_parameter_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_parameter_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_parameter_cpp
+[18.589s] Invoking command in '/home/x311/town_ws/src/build/learning_parameter_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_parameter_cpp -- -j4 -l4
+[19.334s] [ 50%] [32mBuilding CXX object CMakeFiles/param_declare.dir/src/param_declare.cpp.o[0m
+[40.567s] [100%] [32m[1mLinking CXX executable param_declare[0m
+[41.213s] [100%] Built target param_declare
+[41.275s] Invoked command in '/home/x311/town_ws/src/build/learning_parameter_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_parameter_cpp -- -j4 -l4
+[41.665s] Invoking command in '/home/x311/town_ws/src/build/learning_parameter_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_parameter_cpp
+[41.701s] -- Install configuration: ""
+[41.706s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/lib/learning_parameter_cpp/param_declare
+[41.713s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_parameter_cpp/lib/learning_parameter_cpp/param_declare" to ""
+[41.717s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/ament_index/resource_index/package_run_dependencies/learning_parameter_cpp
+[41.717s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/ament_index/resource_index/parent_prefix_path/learning_parameter_cpp
+[41.721s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/environment/ament_prefix_path.sh
+[41.729s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/environment/ament_prefix_path.dsv
+[41.735s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/environment/path.sh
+[41.735s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/environment/path.dsv
+[41.735s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/local_setup.bash
+[41.739s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/local_setup.sh
+[41.743s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/local_setup.zsh
+[41.745s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/local_setup.dsv
+[41.745s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/package.dsv
+[41.750s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/ament_index/resource_index/packages/learning_parameter_cpp
+[41.751s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/cmake/learning_parameter_cppConfig.cmake
+[41.753s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/cmake/learning_parameter_cppConfig-version.cmake
+[41.762s] -- Installing: /home/x311/town_ws/src/install/learning_parameter_cpp/share/learning_parameter_cpp/package.xml
+[41.770s] Invoked command in '/home/x311/town_ws/src/build/learning_parameter_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_parameter_cpp

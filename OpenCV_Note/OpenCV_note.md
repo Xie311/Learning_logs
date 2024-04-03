@@ -2,7 +2,7 @@
 
 （前情提要：由于未知原因本机window下python环境无法正常在Vscode终端下安装OpenCV环境^_^）
 
-> Ubuntu下在miniconda中配置Open环境详见`Study_log/Linux_Note/Ubuntu miniconda3安装与环境配置.md`
+> Ubuntu下在miniconda中配置OpenCV环境详见`Study_log/Linux_Note/Ubuntu miniconda3安装与环境配置.md`
 
 ##      1.下载OpenCV环境
 
@@ -161,7 +161,7 @@ while(True):
     ret,frame = cap.read()    #可以给空参数（一般设置为25ms）
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     cv2.imshow('frame',gray)
-    if cv2.waitKey(1) & 0xFF == ord('q'):  #cv2.waitkey()参数为1而非零，否则x
+    if cv2.waitKey(1) & 0xFF == ord('q'):  #cv2.waitkey()参数为1而非零，否则循环厶掉
         break
      #&0xFF 是为了确保只关心 ASCII 值的最后八位（在某些操作系统上，cv2.waitKey() 返回的值可能包含其他信息）
     
@@ -270,6 +270,9 @@ cv2.rectangle()
 	第一个参数：图像
 	第二个参数：中心点坐标
 	第三个参数：半径
+	第四个参数：绘制颜色
+	第五个参数：绘制粗细
+	第六个参数：线条类型
 """
 cv2.circle()
 ```
@@ -929,7 +932,7 @@ cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C
 
 > 自适应阈值过于灵敏，识别性质不好
 
-### 基于直方图的阈值
+### ==基于直方图的阈值==
 
 - ==OTSU（大津法）==
 
@@ -1102,7 +1105,7 @@ cv2.GaussianBlur()
 
 中值滤波将滤波器范围内所有的像素值按照由小到大的顺序排列，选取排序序列的中值作为滤波器中心处像素的新像素值，之后将滤波器移动到下一个位置，重复进行排序取中值的操作，直到将图像所有的像素点都被滤波器中心对应一遍。
 
-中值滤波不依赖于滤波器内那些与典型值差别很大的值，因此对**斑点噪声**和**椒盐噪声**的处理具有较好的处理效果。
+**中值滤波不依赖于滤波器内那些与典型值差别很大的值**，因此对**斑点噪声**和**椒盐噪声**的处理具有较好的处理效果。
 
 ```python
 """
@@ -1873,7 +1876,7 @@ while True:
 cv2.destroyAllWindows()
 ```
 
-### **2.6 最小外接圆**
+### **==2.6 最小外接圆==**
 
 > **一般先使用霍夫圆变换进行严格圆识别，识别不到再采用最小外接圆函数对图像中所有轮廓进行识别**
 
@@ -3917,6 +3920,8 @@ cv2.destroyAllWindows()
 
 **3.结构元素定义**
 
+eg.`kernel = np.ones((7, 7), np.uint8)`
+
 ## 3.图像处理段
 
 **1. 饱和度增强**
@@ -3931,7 +3936,7 @@ cv2.destroyAllWindows()
 
 **4.二值化**
 
-**5.球的检测**
+**5.球的检测(霍夫圆变换；轮廓检测->提取最大轮廓->（椭）圆拟合)**
 
 ## 4.数据传至上位机
 

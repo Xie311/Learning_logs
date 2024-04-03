@@ -1,7 +1,7 @@
 import cv2
 
 # 打开笔记本电脑摄像头
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # 检查摄像头是否成功打开
 if not cap.isOpened():
@@ -20,6 +20,7 @@ while True:
 
     # 显示图像
     cv2.imshow('Camera', frame)
+
 
     # 检查用户是否按下了 'q' 键，如果是则退出循环
     if cv2.waitKey(1) & 0xFF == ord('q'):

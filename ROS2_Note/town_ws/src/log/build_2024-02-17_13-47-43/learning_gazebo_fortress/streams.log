@@ -1,0 +1,57 @@
+[4.909s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_gazebo_fortress': PYTHONPATH=/home/x311/town_ws/src/build/learning_gazebo_fortress/prefix_override:/home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo_fortress build --build-base /home/x311/town_ws/src/build/learning_gazebo_fortress/build install --record /home/x311/town_ws/src/build/learning_gazebo_fortress/install.log --single-version-externally-managed
+[6.092s] running egg_info
+[6.092s] creating ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info
+[6.092s] writing ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/PKG-INFO
+[6.092s] writing dependency_links to ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/dependency_links.txt
+[6.093s] writing entry points to ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/entry_points.txt
+[6.093s] writing requirements to ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/requires.txt
+[6.093s] writing top-level names to ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/top_level.txt
+[6.093s] writing manifest file '../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/SOURCES.txt'
+[6.099s] reading manifest file '../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/SOURCES.txt'
+[6.099s] writing manifest file '../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info/SOURCES.txt'
+[6.100s] running build
+[6.100s] running build_py
+[6.103s] creating /home/x311/town_ws/src/build/learning_gazebo_fortress/build
+[6.103s] creating /home/x311/town_ws/src/build/learning_gazebo_fortress/build/lib
+[6.104s] creating /home/x311/town_ws/src/build/learning_gazebo_fortress/build/lib/learning_gazebo_fortress
+[6.104s] copying learning_gazebo_fortress/__init__.py -> /home/x311/town_ws/src/build/learning_gazebo_fortress/build/lib/learning_gazebo_fortress
+[6.108s] running install
+[6.108s] running install_lib
+[6.116s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.116s]   warnings.warn(
+[6.121s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages/learning_gazebo_fortress
+[6.121s] copying /home/x311/town_ws/src/build/learning_gazebo_fortress/build/lib/learning_gazebo_fortress/__init__.py -> /home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages/learning_gazebo_fortress
+[6.122s] byte-compiling /home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages/learning_gazebo_fortress/__init__.py to __init__.cpython-310.pyc
+[6.122s] running install_data
+[6.132s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/ament_index
+[6.133s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/ament_index/resource_index
+[6.133s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/ament_index/resource_index/packages
+[6.134s] copying resource/learning_gazebo_fortress -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/ament_index/resource_index/packages
+[6.134s] copying package.xml -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress
+[6.135s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/launch
+[6.135s] copying launch/load_mbot_lidar_into_gazebo_fortress.launch.py -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/launch
+[6.135s] copying launch/load_mbot_rgbd_into_gazebo_fortress.launch.py -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/launch
+[6.136s] copying launch/load_urdf_into_gazebo_fortress.launch.py -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/launch
+[6.136s] copying launch/load_mbot_camera_into_gazebo_fortress.launch.py -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/launch
+[6.136s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.136s] copying urdf/mbot_base_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.137s] copying urdf/mbot_with_rgbd_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.137s] copying urdf/mbot_with_lidar_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.137s] copying urdf/mbot_with_camera_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.137s] copying urdf/mbot_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf
+[6.138s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf/sensors
+[6.138s] copying urdf/sensors/camera_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf/sensors
+[6.138s] copying urdf/sensors/rgbd_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf/sensors
+[6.139s] copying urdf/sensors/lidar_gazebo_fortress.xacro -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/urdf/sensors
+[6.161s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/worlds
+[6.161s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/rviz
+[6.162s] creating /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/config
+[6.162s] copying config/ros_gz_bridge_mbot_lidar.yaml -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/config
+[6.163s] copying config/ros_gz_bridge_mbot_camera.yaml -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/config
+[6.163s] copying config/ros_gz_bridge_mbot.yaml -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/config
+[6.164s] copying config/ros_gz_bridge_mbot_rgbd.yaml -> /home/x311/town_ws/src/install/learning_gazebo_fortress/share/learning_gazebo_fortress/config
+[6.164s] running install_egg_info
+[6.164s] Copying ../../build/learning_gazebo_fortress/learning_gazebo_fortress.egg-info to /home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages/learning_gazebo_fortress-0.0.0-py3.10.egg-info
+[6.165s] running install_scripts
+[6.223s] writing list of installed files to '/home/x311/town_ws/src/build/learning_gazebo_fortress/install.log'
+[7.010s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_gazebo_fortress' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_gazebo_fortress/prefix_override:/home/x311/town_ws/src/install/learning_gazebo_fortress/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo_fortress build --build-base /home/x311/town_ws/src/build/learning_gazebo_fortress/build install --record /home/x311/town_ws/src/build/learning_gazebo_fortress/install.log --single-version-externally-managed

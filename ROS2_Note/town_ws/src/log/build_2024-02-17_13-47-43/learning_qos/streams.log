@@ -1,0 +1,43 @@
+[4.901s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_qos': PYTHONPATH=/home/x311/town_ws/src/build/learning_qos/prefix_override:/home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_qos build --build-base /home/x311/town_ws/src/build/learning_qos/build install --record /home/x311/town_ws/src/build/learning_qos/install.log --single-version-externally-managed
+[6.161s] running egg_info
+[6.166s] creating ../../build/learning_qos/learning_qos.egg-info
+[6.167s] writing ../../build/learning_qos/learning_qos.egg-info/PKG-INFO
+[6.167s] writing dependency_links to ../../build/learning_qos/learning_qos.egg-info/dependency_links.txt
+[6.167s] writing entry points to ../../build/learning_qos/learning_qos.egg-info/entry_points.txt
+[6.168s] writing requirements to ../../build/learning_qos/learning_qos.egg-info/requires.txt
+[6.168s] writing top-level names to ../../build/learning_qos/learning_qos.egg-info/top_level.txt
+[6.174s] writing manifest file '../../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[6.189s] reading manifest file '../../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[6.193s] writing manifest file '../../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[6.194s] running build
+[6.196s] running build_py
+[6.197s] creating /home/x311/town_ws/src/build/learning_qos/build
+[6.197s] creating /home/x311/town_ws/src/build/learning_qos/build/lib
+[6.197s] creating /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos
+[6.197s] copying learning_qos/qos_helloworld_pub.py -> /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos
+[6.198s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.198s]   warnings.warn(
+[6.199s] copying learning_qos/qos_helloworld_sub.py -> /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos
+[6.199s] copying learning_qos/__init__.py -> /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos
+[6.199s] running install
+[6.199s] running install_lib
+[6.210s] creating /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[6.210s] copying /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos/qos_helloworld_pub.py -> /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[6.211s] copying /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos/qos_helloworld_sub.py -> /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[6.211s] copying /home/x311/town_ws/src/build/learning_qos/build/lib/learning_qos/__init__.py -> /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[6.211s] byte-compiling /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos/qos_helloworld_pub.py to qos_helloworld_pub.cpython-310.pyc
+[6.225s] byte-compiling /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos/qos_helloworld_sub.py to qos_helloworld_sub.cpython-310.pyc
+[6.226s] byte-compiling /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos/__init__.py to __init__.cpython-310.pyc
+[6.226s] running install_data
+[6.227s] creating /home/x311/town_ws/src/install/learning_qos/share/ament_index
+[6.228s] creating /home/x311/town_ws/src/install/learning_qos/share/ament_index/resource_index
+[6.228s] creating /home/x311/town_ws/src/install/learning_qos/share/ament_index/resource_index/packages
+[6.229s] copying resource/learning_qos -> /home/x311/town_ws/src/install/learning_qos/share/ament_index/resource_index/packages
+[6.229s] copying package.xml -> /home/x311/town_ws/src/install/learning_qos/share/learning_qos
+[6.230s] running install_egg_info
+[6.243s] Copying ../../build/learning_qos/learning_qos.egg-info to /home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages/learning_qos-0.0.0-py3.10.egg-info
+[6.252s] running install_scripts
+[6.385s] Installing qos_helloworld_pub script to /home/x311/town_ws/src/install/learning_qos/lib/learning_qos
+[6.385s] Installing qos_helloworld_sub script to /home/x311/town_ws/src/install/learning_qos/lib/learning_qos
+[6.387s] writing list of installed files to '/home/x311/town_ws/src/build/learning_qos/install.log'
+[6.475s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_qos' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_qos/prefix_override:/home/x311/town_ws/src/install/learning_qos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_qos build --build-base /home/x311/town_ws/src/build/learning_qos/build install --record /home/x311/town_ws/src/build/learning_qos/install.log --single-version-externally-managed

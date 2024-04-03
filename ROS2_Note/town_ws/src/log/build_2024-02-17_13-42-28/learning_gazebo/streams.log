@@ -1,0 +1,66 @@
+[2.700s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_gazebo': PYTHONPATH=/home/x311/town_ws/src/build/learning_gazebo/prefix_override:/home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo build --build-base /home/x311/town_ws/src/build/learning_gazebo/build install --record /home/x311/town_ws/src/build/learning_gazebo/install.log --single-version-externally-managed
+[3.464s] running egg_info
+[3.466s] creating ../../build/learning_gazebo/learning_gazebo.egg-info
+[3.466s] writing ../../build/learning_gazebo/learning_gazebo.egg-info/PKG-INFO
+[3.467s] writing dependency_links to ../../build/learning_gazebo/learning_gazebo.egg-info/dependency_links.txt
+[3.467s] writing entry points to ../../build/learning_gazebo/learning_gazebo.egg-info/entry_points.txt
+[3.467s] writing requirements to ../../build/learning_gazebo/learning_gazebo.egg-info/requires.txt
+[3.468s] writing top-level names to ../../build/learning_gazebo/learning_gazebo.egg-info/top_level.txt
+[3.469s] writing manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[3.476s] reading manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[3.481s] writing manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[3.481s] running build
+[3.482s] running build_py
+[3.482s] creating /home/x311/town_ws/src/build/learning_gazebo/build
+[3.482s] creating /home/x311/town_ws/src/build/learning_gazebo/build/lib
+[3.482s] creating /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo
+[3.483s] copying learning_gazebo/__init__.py -> /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo
+[3.484s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.484s]   warnings.warn(
+[3.484s] running install
+[3.486s] running install_lib
+[3.487s] creating /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo
+[3.488s] copying /home/x311/town_ws/src/build/learning_gazebo/build/lib/learning_gazebo/__init__.py -> /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo
+[3.489s] byte-compiling /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo/__init__.py to __init__.cpython-310.pyc
+[3.490s] running install_data
+[3.491s] creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index
+[3.492s] creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index
+[3.492s] creating /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index/packages
+[3.492s] copying resource/learning_gazebo -> /home/x311/town_ws/src/install/learning_gazebo/share/ament_index/resource_index/packages
+[3.493s] copying package.xml -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo
+[3.493s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.493s] copying launch/mbot_laser.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.494s] copying launch/load_mbot_rgbd_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.497s] copying launch/load_urdf_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.498s] copying launch/load_mbot_laser_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.498s] copying launch/mbot_camera.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.499s] copying launch/load_mbot_camera_into_gazebo.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.499s] copying launch/mbot.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.499s] copying launch/mbot_rgbd.launch.py -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/launch
+[3.500s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.500s] copying urdf/mbot_base_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.501s] copying urdf/mbot_with_rgbd_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.501s] copying urdf/mbot_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.502s] copying urdf/mbot_with_kinect_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.502s] copying urdf/two_wheeled_robot_nav2.urdf -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.502s] copying urdf/mbot_with_camera_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.502s] copying urdf/mbot_with_laser_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf
+[3.503s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes
+[3.503s] copying meshes/kinect.jpg -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes
+[3.503s] copying meshes/kinect.tga -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes
+[3.503s] copying meshes/kinect.dae -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/meshes
+[3.505s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[3.505s] copying urdf/sensors/lidar_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[3.506s] copying urdf/sensors/rgbd_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[3.506s] copying urdf/sensors/kinect_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[3.506s] copying urdf/sensors/camera_gazebo.xacro -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[3.507s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds
+[3.507s] copying worlds/neighborhood.world -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds
+[3.508s] copying worlds/empty_world.model -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/worlds
+[3.509s] creating /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/rviz
+[3.509s] copying rviz/urdf_gazebo_config.rviz -> /home/x311/town_ws/src/install/learning_gazebo/share/learning_gazebo/rviz
+[3.511s] running install_egg_info
+[3.516s] Copying ../../build/learning_gazebo/learning_gazebo.egg-info to /home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages/learning_gazebo-0.0.0-py3.10.egg-info
+[3.520s] running install_scripts
+[3.578s] writing list of installed files to '/home/x311/town_ws/src/build/learning_gazebo/install.log'
+[3.635s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_gazebo' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_gazebo/prefix_override:/home/x311/town_ws/src/install/learning_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo build --build-base /home/x311/town_ws/src/build/learning_gazebo/build install --record /home/x311/town_ws/src/build/learning_gazebo/install.log --single-version-externally-managed

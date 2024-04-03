@@ -1,0 +1,51 @@
+[4.662s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_node': PYTHONPATH=/home/x311/town_ws/src/build/learning_node/prefix_override:/home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/x311/town_ws/src/build/learning_node/build install --record /home/x311/town_ws/src/build/learning_node/install.log --single-version-externally-managed
+[6.015s] running egg_info
+[6.016s] creating ../../build/learning_node/learning_node.egg-info
+[6.016s] writing ../../build/learning_node/learning_node.egg-info/PKG-INFO
+[6.017s] writing dependency_links to ../../build/learning_node/learning_node.egg-info/dependency_links.txt
+[6.018s] writing entry points to ../../build/learning_node/learning_node.egg-info/entry_points.txt
+[6.018s] writing requirements to ../../build/learning_node/learning_node.egg-info/requires.txt
+[6.018s] writing top-level names to ../../build/learning_node/learning_node.egg-info/top_level.txt
+[6.019s] writing manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[6.019s] reading manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[6.020s] writing manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[6.020s] running build
+[6.020s] running build_py
+[6.021s] creating /home/x311/town_ws/src/build/learning_node/build
+[6.021s] creating /home/x311/town_ws/src/build/learning_node/build/lib
+[6.021s] creating /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.022s] copying learning_node/node_object.py -> /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.032s] copying learning_node/node_object_webcam.py -> /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.032s] copying learning_node/node_helloworld_class.py -> /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.032s] copying learning_node/node_helloworld.py -> /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.033s] copying learning_node/__init__.py -> /home/x311/town_ws/src/build/learning_node/build/lib/learning_node
+[6.033s] running install
+[6.033s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.033s]   warnings.warn(
+[6.033s] running install_lib
+[6.041s] creating /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.041s] copying /home/x311/town_ws/src/build/learning_node/build/lib/learning_node/node_object.py -> /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.041s] copying /home/x311/town_ws/src/build/learning_node/build/lib/learning_node/node_object_webcam.py -> /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.044s] copying /home/x311/town_ws/src/build/learning_node/build/lib/learning_node/node_helloworld_class.py -> /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.051s] copying /home/x311/town_ws/src/build/learning_node/build/lib/learning_node/node_helloworld.py -> /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.052s] copying /home/x311/town_ws/src/build/learning_node/build/lib/learning_node/__init__.py -> /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node
+[6.052s] byte-compiling /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node/node_object.py to node_object.cpython-310.pyc
+[6.068s] byte-compiling /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node/node_object_webcam.py to node_object_webcam.cpython-310.pyc
+[6.069s] byte-compiling /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node/node_helloworld_class.py to node_helloworld_class.cpython-310.pyc
+[6.070s] byte-compiling /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node/node_helloworld.py to node_helloworld.cpython-310.pyc
+[6.071s] byte-compiling /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node/__init__.py to __init__.cpython-310.pyc
+[6.072s] running install_data
+[6.079s] creating /home/x311/town_ws/src/install/learning_node/share/ament_index
+[6.080s] creating /home/x311/town_ws/src/install/learning_node/share/ament_index/resource_index
+[6.080s] creating /home/x311/town_ws/src/install/learning_node/share/ament_index/resource_index/packages
+[6.080s] copying resource/learning_node -> /home/x311/town_ws/src/install/learning_node/share/ament_index/resource_index/packages
+[6.081s] copying package.xml -> /home/x311/town_ws/src/install/learning_node/share/learning_node
+[6.081s] running install_egg_info
+[6.088s] Copying ../../build/learning_node/learning_node.egg-info to /home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info
+[6.099s] running install_scripts
+[6.181s] Installing node_helloworld script to /home/x311/town_ws/src/install/learning_node/lib/learning_node
+[6.184s] Installing node_helloworld_class script to /home/x311/town_ws/src/install/learning_node/lib/learning_node
+[6.184s] Installing node_object script to /home/x311/town_ws/src/install/learning_node/lib/learning_node
+[6.185s] Installing node_object_webcam script to /home/x311/town_ws/src/install/learning_node/lib/learning_node
+[6.185s] writing list of installed files to '/home/x311/town_ws/src/build/learning_node/install.log'
+[6.309s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_node' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_node/prefix_override:/home/x311/town_ws/src/install/learning_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/x311/town_ws/src/build/learning_node/build install --record /home/x311/town_ws/src/build/learning_node/install.log --single-version-externally-managed
