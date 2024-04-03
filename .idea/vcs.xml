@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ROS2_Note/town_ws/src/ros2_21_tutorials" vcs="Git" />
   </component>
 </project>
