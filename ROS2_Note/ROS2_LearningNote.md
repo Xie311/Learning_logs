@@ -1,7 +1,5 @@
 ### 0.杂项
 
--  `colcon build --packages-select `
-
 - `source install setup.bash`
 
 - 在.bashrc下添加
@@ -56,7 +54,84 @@ https://moveit.ros.org
 - https://github.com/ros2
 
 ---
-### 1.运行节点（rclpy）
+### 1.创建&编译工作空间
+
+#### (1）创建工作空间
+
+```
+mkdir -p ~/dev_ws/src
+cd ~/dev_sw/src
+```
+
+#### (2)rosdepc
+
+rosdep 是 ROS（机器人操作系统）中的一个工具，用于安装系统依赖项。ROS是一个用于构建机器人软件的开源框架，它依赖于许多系统级别的软件包。rosdep 的作用是帮助用户轻松地安装这些系统依赖项。
+
+- **1.为什么叫rosdepc?**
+
+`rosdepc`，c指的是China中国，主要用于和rosdep区分。
+
+- **2.rosdepc和rosdep功能一致吗?**
+
+rosdep官方最新版源码直接修改的，小鱼只动了名称和源地址，将其地址修改为国内gitee地址。
+
+- **3.rosdepc为什么不会初始化失败?**
+
+因为rosdepc使用的是国内的源，rosdep初始化失败是因为其使用的是github，国内无法访问。
+
+```
+wget http://fishros.com/install -O fishros && . fishros
+rosdepc update
+```
+
+#### (3)编译
+
+**在工作空间的根目录下**
+
+```python
+colcon build #编译整个工作空间的文件
+colcon build --packages-select learning_node   #编译指定包
+
+#但这个指令并不会编译该包的依赖，往往会报错。可以用下面这条指令进行包和其依赖编译
+colcon build --packages-up-to <name-of-pkg>
+```
+
+#### (4）配置环境变量
+
+install->setup.sh/local_setup.sh/...
+
+```
+source install/local_setup.sh
+```
+
+**可将这句指令放在bashrc中**:
+
+home/.bashrc
+
+`source ~/dev_ws/install/local_setup.sh`
+
+#### （5）创建功能包
+
+```
+cd ~/dev_ws/src
+ros2 pkg create --build-type ament_cmake learning_pkg_c
+ros2 pkg create --build-type ament_python learning_pkg_python
+```
+
+> 功能包内，package.xml文件下半部分描述需要的依赖
+>
+> setup.py:功能包基本信息、入口程序点的描述、entry_points（）
+
+#### (6)运行节点
+
+```
+ros2 run learning_node node_helloworld
+```
+
+
+
+### 2.运行节点（rclpy）
+
 ```python
 #!/usr/bin/env python3
 import rclpy
