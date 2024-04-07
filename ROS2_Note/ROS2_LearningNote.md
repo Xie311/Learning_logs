@@ -12,14 +12,14 @@
   #source /opt/ros/版本名字/setup.zshrc
   ```
 
-- zsh设置ROS2自动补全
+- **zsh设置ROS2自动补全**
 
   ```python
   #打开setup.zsh文件
   sudo vim /opt/ros/humble/setup.zsh
   
   #在末尾添加如下两个指令之一：
-  complete -o nospace -o default -F _python_argcomplete "ros2"
+  i
   或者
   # argcomplete for ros2 & colcon
   eval "$(register-python-argcomplete3 ros2)"
@@ -27,7 +27,7 @@
   然后重新source即可。
   ```
 
-- setup.py配置：
+- **setup.py配置**：
 '节点名称=文件夹名.文件名：函数名'
 ```python
     entry_points={
@@ -38,7 +38,6 @@
     },
 ```
 - 语法高亮：右下选择YAML
-- 显示隐藏文件`Ctrl+h`
 - 虚拟机改为CPU渲染Gazebo中仿真
 ```
   vi .bashrc
@@ -146,7 +145,7 @@ class Node04(Node):
         super().__init__(name)
         self.get_logger().info("大家好，我是%s!" % name)
 
-def main(args=None):
+def main(args=None):ros2
     rclpy.init(args=args) # 初始化rclpy
     node = Node04("node_04")  # 新建一个节点
     rclpy.spin(node) # 保持节点运行，检测是否收到退出指令（Ctrl+C）

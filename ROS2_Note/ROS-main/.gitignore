@@ -1,0 +1,8 @@
+*.ini
+*.rviz
+
+**/build
+**/install
+**/log
+
+

@@ -1,0 +1,8 @@
+{
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
