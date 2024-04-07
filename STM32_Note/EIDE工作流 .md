@@ -7,7 +7,7 @@
 * **软件环境:**
   - Windows 11/10   /   Ubuntu
   - STM32CubeMX
-  - Vscode
+  - VSCode
   - OpenOCD
   - arm-none-eabi-gcc
 * **硬件环境**：
