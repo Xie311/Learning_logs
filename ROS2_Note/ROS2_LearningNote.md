@@ -190,7 +190,7 @@ touch topic_publisher_02.py
 ---
 ### 话题-发布
 ```python
-mport rclpy                                     # ROS2 Python接口库
+import rclpy                                     # ROS2 Python接口库
 from rclpy.node import Node                      # ROS2 节点类
 from std_msgs.msg import String                  # 字符串消息类型
 
