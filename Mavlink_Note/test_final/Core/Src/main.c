@@ -93,6 +93,10 @@ int main(void)
   wtrMavlink_BindChannel(&huart4, MAVLINK_COMM_0);
   wtrMavlink_BindChannel(&huart5, MAVLINK_COMM_1);
 
+  SPEEDStructToBeSend.vx =0;
+  SPEEDStructToBeSend.vy =0;
+  SPEEDStructToBeSend.vz =0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,7 +112,7 @@ int main(void)
     SPEEDStructToBeSend.vy +=1;
     SPEEDStructToBeSend.vz +=1;
 
-    // 向通道0发送结构体
+    // 通道0发送结构体
     mavlink_msg_speed_send_struct(MAVLINK_COMM_0, &SPEEDStructToBeSend);
     HAL_Delay(200);
   }
@@ -173,7 +177,7 @@ void SystemClock_Config(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     // 接收通道0的消息
-    wtrMavlink_UARTRxCpltCallback(huart, MAVLINK_COMM_0);
+    wtrMavlink_UARTRxCpltCallback(huart, MAVLINK_COMM_1);
 }
 
 void wtrMavlink_MsgRxCpltCallback(mavlink_message_t *msg)
