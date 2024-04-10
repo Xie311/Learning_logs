@@ -1,0 +1,28 @@
+[0.320s] Invoking command in '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/src/ros2_21_tutorials/learning_node': PYTHONPATH=/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/prefix_override:/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/learning_node build --build-base /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build install --record /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log --single-version-externally-managed install_data
+[0.449s] running egg_info
+[0.449s] writing ../../../build/learning_node/learning_node.egg-info/PKG-INFO
+[0.449s] writing dependency_links to ../../../build/learning_node/learning_node.egg-info/dependency_links.txt
+[0.449s] writing entry points to ../../../build/learning_node/learning_node.egg-info/entry_points.txt
+[0.449s] writing requirements to ../../../build/learning_node/learning_node.egg-info/requires.txt
+[0.449s] writing top-level names to ../../../build/learning_node/learning_node.egg-info/top_level.txt
+[0.451s] reading manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[0.451s] writing manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[0.451s] running build
+[0.451s] running build_py
+[0.451s] copying learning_node/node_object.py -> /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build/lib/learning_node
+[0.452s] running install
+[0.452s] running install_lib
+[0.453s] copying /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build/lib/learning_node/node_object.py -> /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node
+[0.453s] byte-compiling /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node/node_object.py to node_object.cpython-310.pyc
+[0.453s] running install_data
+[0.453s] running install_egg_info
+[0.455s] removing '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info' (and everything under it)
+[0.455s] Copying ../../../build/learning_node/learning_node.egg-info to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info
+[0.455s] running install_scripts
+[0.471s] Installing node_helloworld script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+[0.471s] Installing node_helloworld_class script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+[0.471s] Installing node_object script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+[0.471s] Installing node_object_webcam script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+[0.471s] Installing winter script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+[0.472s] writing list of installed files to '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log'
+[0.495s] Invoked command in '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/src/ros2_21_tutorials/learning_node' returned '0': PYTHONPATH=/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/prefix_override:/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/learning_node build --build-base /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build install --record /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log --single-version-externally-managed install_data
