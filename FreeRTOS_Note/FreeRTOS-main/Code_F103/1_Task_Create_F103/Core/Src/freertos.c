@@ -157,7 +157,7 @@ void OLED_Task(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    OLED_ShowString(20, 200, (char *)("HelloWorld"), 6, 0);
+    OLED_ShowNum(5,1,2024,4,16);
     osDelay(500);
     OLED_On();
     osDelay(300);
@@ -178,11 +178,16 @@ void LED_Task(void *argument)
 {
   /* USER CODE BEGIN LED_Task */
   /* Infinite loop */
+  uint32_t last_wake_time = osKernelGetTickCount(); // 获取当前系统节拍时间
+  const uint32_t interval_ms = 1000; // 打印间隔，单位为毫秒
+
   for(;;)
   {
-    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
-    osDelay(500);
-  }
+    //osDelay(500);
+   	HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+    osDelayUntil(last_wake_time + interval_ms);
+    last_wake_time = osKernelGetTickCount(); // 更新上次唤醒时间
+    }
   /* USER CODE END LED_Task */
 }
 

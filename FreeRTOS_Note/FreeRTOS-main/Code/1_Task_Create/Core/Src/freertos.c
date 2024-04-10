@@ -152,8 +152,8 @@ void OLED_Task(void const * argument)
   /* USER CODE BEGIN OLED_Task */
     /* Infinite loop */
     for (;;) {
-        OLED_ShowString(0, 0, (char *)("HelloWorld"), 6, 0);
-        osDelay(10);
+        OLED_ShowString(20, 20, (char *)("HelloWorld"), 6, 0);
+        osDelay(200);
     }
   /* USER CODE END OLED_Task */
 }
@@ -161,7 +161,7 @@ void OLED_Task(void const * argument)
 /* USER CODE BEGIN Header_LED_Task */
 /**
  * @brief Function implementing the LEDTask thread.
- * @param argument: Not used
+ * @param argument: Not used                                                                                                                                                                    
  * @retval None
  */
 /* USER CODE END Header_LED_Task */
@@ -169,10 +169,16 @@ void LED_Task(void const * argument)
 {
   /* USER CODE BEGIN LED_Task */
     /* Infinite loop */
-    for (;;) {
-        HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
-        osDelay(1000);
-    }
+  static portTickType xlastwaketime;
+  /* 使用 pdMS_TO_TICK 宏转换为系统tick */
+  const portTickType xfrequent = pdMS_TO_TICKS(300); 
+  /* 获取当前系统时间 */
+  xlastwaketime = osKernelSysTick();
+  for(;;)
+  {
+    osDelayUntil(&xlastwaketime,xfrequent);
+    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+  }
   /* USER CODE END LED_Task */
 }
 
