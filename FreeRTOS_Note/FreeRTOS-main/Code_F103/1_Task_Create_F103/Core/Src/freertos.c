@@ -68,6 +68,13 @@ const osThreadAttr_t LEDTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+/* Definitions for SuspendTask */
+osThreadId_t SuspendTaskHandle;
+const osThreadAttr_t SuspendTask_attributes = {
+  .name = "SuspendTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -77,6 +84,7 @@ const osThreadAttr_t LEDTask_attributes = {
 void StartDefaultTask(void *argument);
 void OLED_Task(void *argument);
 void LED_Task(void *argument);
+void Suspend_Task(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -115,6 +123,9 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of LEDTask */
   LEDTaskHandle = osThreadNew(LED_Task, NULL, &LEDTask_attributes);
+
+  /* creation of SuspendTask */
+  SuspendTaskHandle = osThreadNew(Suspend_Task, NULL, &SuspendTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -178,6 +189,7 @@ void LED_Task(void *argument)
 {
   /* USER CODE BEGIN LED_Task */
   /* Infinite loop */
+
   uint32_t last_wake_time = osKernelGetTickCount(); // 获取当前系统节拍时间
   const uint32_t interval_ms = 1000; // 打印间隔，单位为毫秒
 
@@ -189,6 +201,34 @@ void LED_Task(void *argument)
     last_wake_time = osKernelGetTickCount(); // 更新上次唤醒时间
     }
   /* USER CODE END LED_Task */
+}
+
+/* USER CODE BEGIN Header_Suspend_Task */
+/**
+* @brief Function implementing the SuspendTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Suspend_Task */
+void Suspend_Task(void *argument)
+{
+  /* USER CODE BEGIN Suspend_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_9) == 0)
+    {
+      osThreadSuspend(LEDTaskHandle);
+    }
+    if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_9) == 0)
+    {
+      osThreadResume(LEDTaskHandle);  
+    }
+    // eTaskState currentState = eTaskGetState(LEDTaskHandle);
+    // OLED_ShowString(85,4,(char*)currentState,15);
+    osDelay(1);
+  }
+  /* USER CODE END Suspend_Task */
 }
 
 /* Private application code --------------------------------------------------*/
