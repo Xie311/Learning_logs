@@ -1,5 +1,17 @@
 # FreeRTOS CMSIS V2库
 
+`[CMSIS-RTOS2 文档翻译 之 从 API v1 迁移到 API v2_cmsis v2文档-CSDN博客](https://blog.csdn.net/u012325601/article/details/80055477)`
+
+---
+`osThreadId_t osThreadNew (osThreadFunc_t function, void *argument, const osThreadAttr_t *attr)`
+`osThreadId   osThreadCreate (const osThreadDef_t *thread_def, void *argument)`
+
+创建一个线程并将其添加到活动线程。
+函数 osThreadNew 替换了 RTOS v1 函数 osThreadCreate 。
+现在使用 osThreadAttr_t 结构体传递项目, 取代 osThreadDef 宏。
+新的函数原型是 void func (void *arg), 之前是: void func (const void *arg) 。
+
+
 ```c
 #ifndef CMSIS_OS2_H_
 #define CMSIS_OS2_H_
