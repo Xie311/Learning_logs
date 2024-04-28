@@ -1,0 +1,43 @@
+[7.467s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_parameter': PYTHONPATH=/home/x311/town_ws/src/build/learning_parameter/prefix_override:/home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_parameter build --build-base /home/x311/town_ws/src/build/learning_parameter/build install --record /home/x311/town_ws/src/build/learning_parameter/install.log --single-version-externally-managed
+[9.466s] running egg_info
+[9.467s] creating ../../build/learning_parameter/learning_parameter.egg-info
+[9.474s] writing ../../build/learning_parameter/learning_parameter.egg-info/PKG-INFO
+[9.474s] writing dependency_links to ../../build/learning_parameter/learning_parameter.egg-info/dependency_links.txt
+[9.475s] writing entry points to ../../build/learning_parameter/learning_parameter.egg-info/entry_points.txt
+[9.475s] writing requirements to ../../build/learning_parameter/learning_parameter.egg-info/requires.txt
+[9.475s] writing top-level names to ../../build/learning_parameter/learning_parameter.egg-info/top_level.txt
+[9.476s] writing manifest file '../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[9.486s] reading manifest file '../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[9.498s] writing manifest file '../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[9.498s] running build
+[9.498s] running build_py
+[9.508s] creating /home/x311/town_ws/src/build/learning_parameter/build
+[9.508s] creating /home/x311/town_ws/src/build/learning_parameter/build/lib
+[9.508s] creating /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter
+[9.509s] copying learning_parameter/param_declare.py -> /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter
+[9.509s] copying learning_parameter/param_object_detect.py -> /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter
+[9.509s] copying learning_parameter/__init__.py -> /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter
+[9.526s] running install
+[9.527s] running install_lib
+[9.527s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.527s]   warnings.warn(
+[9.538s] creating /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter
+[9.539s] copying /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter/param_declare.py -> /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter
+[9.539s] copying /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter/param_object_detect.py -> /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter
+[9.539s] copying /home/x311/town_ws/src/build/learning_parameter/build/lib/learning_parameter/__init__.py -> /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter
+[9.539s] byte-compiling /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter/param_declare.py to param_declare.cpython-310.pyc
+[9.540s] byte-compiling /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter/param_object_detect.py to param_object_detect.cpython-310.pyc
+[9.566s] byte-compiling /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter/__init__.py to __init__.cpython-310.pyc
+[9.567s] running install_data
+[9.567s] creating /home/x311/town_ws/src/install/learning_parameter/share/ament_index
+[9.567s] creating /home/x311/town_ws/src/install/learning_parameter/share/ament_index/resource_index
+[9.568s] creating /home/x311/town_ws/src/install/learning_parameter/share/ament_index/resource_index/packages
+[9.568s] copying resource/learning_parameter -> /home/x311/town_ws/src/install/learning_parameter/share/ament_index/resource_index/packages
+[9.568s] copying package.xml -> /home/x311/town_ws/src/install/learning_parameter/share/learning_parameter
+[9.569s] running install_egg_info
+[9.590s] Copying ../../build/learning_parameter/learning_parameter.egg-info to /home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages/learning_parameter-0.0.0-py3.10.egg-info
+[9.602s] running install_scripts
+[9.794s] Installing param_declare script to /home/x311/town_ws/src/install/learning_parameter/lib/learning_parameter
+[9.795s] Installing param_object_detect script to /home/x311/town_ws/src/install/learning_parameter/lib/learning_parameter
+[9.795s] writing list of installed files to '/home/x311/town_ws/src/build/learning_parameter/install.log'
+[9.967s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_parameter' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_parameter/prefix_override:/home/x311/town_ws/src/install/learning_parameter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_parameter build --build-base /home/x311/town_ws/src/build/learning_parameter/build install --record /home/x311/town_ws/src/build/learning_parameter/install.log --single-version-externally-managed

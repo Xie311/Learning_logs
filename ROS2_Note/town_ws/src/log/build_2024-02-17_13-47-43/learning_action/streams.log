@@ -1,0 +1,43 @@
+[4.832s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_action': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/build/learning_action/prefix_override:/home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages:/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_action build --build-base /home/x311/town_ws/src/build/learning_action/build install --record /home/x311/town_ws/src/build/learning_action/install.log --single-version-externally-managed
+[6.313s] running egg_info
+[6.313s] creating ../../build/learning_action/learning_action.egg-info
+[6.314s] writing ../../build/learning_action/learning_action.egg-info/PKG-INFO
+[6.316s] writing dependency_links to ../../build/learning_action/learning_action.egg-info/dependency_links.txt
+[6.317s] writing entry points to ../../build/learning_action/learning_action.egg-info/entry_points.txt
+[6.318s] writing requirements to ../../build/learning_action/learning_action.egg-info/requires.txt
+[6.319s] writing top-level names to ../../build/learning_action/learning_action.egg-info/top_level.txt
+[6.321s] writing manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[6.338s] reading manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[6.348s] writing manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[6.350s] running build
+[6.351s] running build_py
+[6.352s] creating /home/x311/town_ws/src/build/learning_action/build
+[6.352s] creating /home/x311/town_ws/src/build/learning_action/build/lib
+[6.353s] creating /home/x311/town_ws/src/build/learning_action/build/lib/learning_action
+[6.353s] copying learning_action/action_move_client.py -> /home/x311/town_ws/src/build/learning_action/build/lib/learning_action
+[6.355s] copying learning_action/action_move_server.py -> /home/x311/town_ws/src/build/learning_action/build/lib/learning_action
+[6.356s] copying learning_action/__init__.py -> /home/x311/town_ws/src/build/learning_action/build/lib/learning_action
+[6.358s] running install
+[6.359s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.359s]   warnings.warn(
+[6.369s] running install_lib
+[6.373s] creating /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action
+[6.374s] copying /home/x311/town_ws/src/build/learning_action/build/lib/learning_action/action_move_client.py -> /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action
+[6.375s] copying /home/x311/town_ws/src/build/learning_action/build/lib/learning_action/action_move_server.py -> /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action
+[6.376s] copying /home/x311/town_ws/src/build/learning_action/build/lib/learning_action/__init__.py -> /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action
+[6.380s] byte-compiling /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action/action_move_client.py to action_move_client.cpython-310.pyc
+[6.393s] byte-compiling /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action/action_move_server.py to action_move_server.cpython-310.pyc
+[6.394s] byte-compiling /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action/__init__.py to __init__.cpython-310.pyc
+[6.395s] running install_data
+[6.397s] creating /home/x311/town_ws/src/install/learning_action/share/ament_index
+[6.398s] creating /home/x311/town_ws/src/install/learning_action/share/ament_index/resource_index
+[6.399s] creating /home/x311/town_ws/src/install/learning_action/share/ament_index/resource_index/packages
+[6.399s] copying resource/learning_action -> /home/x311/town_ws/src/install/learning_action/share/ament_index/resource_index/packages
+[6.401s] copying package.xml -> /home/x311/town_ws/src/install/learning_action/share/learning_action
+[6.402s] running install_egg_info
+[6.414s] Copying ../../build/learning_action/learning_action.egg-info to /home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages/learning_action-0.0.0-py3.10.egg-info
+[6.419s] running install_scripts
+[6.587s] Installing action_move_client script to /home/x311/town_ws/src/install/learning_action/lib/learning_action
+[6.587s] Installing action_move_server script to /home/x311/town_ws/src/install/learning_action/lib/learning_action
+[6.588s] writing list of installed files to '/home/x311/town_ws/src/build/learning_action/install.log'
+[6.679s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_action' returned '0': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/build/learning_action/prefix_override:/home/x311/town_ws/src/install/learning_action/lib/python3.10/site-packages:/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_action build --build-base /home/x311/town_ws/src/build/learning_action/build install --record /home/x311/town_ws/src/build/learning_action/install.log --single-version-externally-managed

@@ -1,0 +1,26 @@
+[0.000000] (-) TimerEvent: {}
+[0.000264] (-) JobUnselected: {'identifier': 'learning_action'}
+[0.000290] (-) JobUnselected: {'identifier': 'learning_action'}
+[0.000303] (-) JobUnselected: {'identifier': 'learning_action_cpp'}
+[0.000314] (-) JobUnselected: {'identifier': 'learning_cv'}
+[0.000321] (-) JobUnselected: {'identifier': 'learning_gazebo'}
+[0.000328] (-) JobUnselected: {'identifier': 'learning_gazebo_fortress'}
+[0.000336] (-) JobUnselected: {'identifier': 'learning_interface'}
+[0.000343] (-) JobUnselected: {'identifier': 'learning_launch'}
+[0.000350] (-) JobUnselected: {'identifier': 'learning_node'}
+[0.000357] (-) JobUnselected: {'identifier': 'learning_node_cpp'}
+[0.000365] (-) JobUnselected: {'identifier': 'learning_parameter'}
+[0.000372] (-) JobUnselected: {'identifier': 'learning_parameter_cpp'}
+[0.000380] (-) JobUnselected: {'identifier': 'learning_pkg_c'}
+[0.000387] (-) JobUnselected: {'identifier': 'learning_pkg_python'}
+[0.000394] (-) JobUnselected: {'identifier': 'learning_qos'}
+[0.000401] (-) JobUnselected: {'identifier': 'learning_service'}
+[0.000408] (-) JobUnselected: {'identifier': 'learning_service_cpp'}
+[0.000415] (-) JobUnselected: {'identifier': 'learning_tf'}
+[0.000422] (-) JobUnselected: {'identifier': 'learning_tf_cpp'}
+[0.000428] (-) JobUnselected: {'identifier': 'learning_topic'}
+[0.000436] (-) JobUnselected: {'identifier': 'learning_topic_cpp'}
+[0.000443] (-) JobUnselected: {'identifier': 'learning_urdf'}
+[0.000450] (-) JobUnselected: {'identifier': 'village_li'}
+[0.000458] (-) JobUnselected: {'identifier': 'village_wang'}
+[0.000620] (-) EventReactorShutdown: {}

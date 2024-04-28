@@ -1,0 +1,74 @@
+[0.500s] Invoking command in '/home/x311/town_ws/src/build/learning_service_cpp': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_service_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_service_cpp
+[1.016s] -- The C compiler identification is GNU 11.4.0
+[1.570s] -- The CXX compiler identification is GNU 11.4.0
+[1.620s] -- Detecting C compiler ABI info
+[2.380s] -- Detecting C compiler ABI info - done
+[2.416s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.417s] -- Detecting C compile features
+[2.418s] -- Detecting C compile features - done
+[2.440s] -- Detecting CXX compiler ABI info
+[2.887s] -- Detecting CXX compiler ABI info - done
+[2.940s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.943s] -- Detecting CXX compile features
+[2.948s] -- Detecting CXX compile features - done
+[2.973s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.802s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.360s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[4.712s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.749s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.832s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.922s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.086s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.464s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.468s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.270s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.529s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.700s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.782s] -- Looking for pthread.h
+[7.684s] -- Looking for pthread.h - found
+[7.684s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.307s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.308s] -- Found Threads: TRUE  
+[9.261s] -- Found learning_interface: 0.0.0 (/home/x311/town_ws/src/install/learning_interface/share/learning_interface/cmake)
+[9.950s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.285s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.285s] -- Configured cppcheck include dirs: 
+[10.286s] -- Configured cppcheck exclude dirs and/or files: 
+[10.287s] -- Added test 'lint_cmake' to check CMake code style
+[10.290s] -- Added test 'uncrustify' to check C / C++ code style
+[10.291s] -- Configured uncrustify additional arguments: 
+[10.292s] -- Added test 'xmllint' to check XML markup files
+[10.296s] -- Configuring done
+[10.373s] -- Generating done
+[10.380s] -- Build files have been written to: /home/x311/town_ws/src/build/learning_service_cpp
+[10.409s] Invoked command in '/home/x311/town_ws/src/build/learning_service_cpp' returned '0': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_service_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_service_cpp
+[10.421s] Invoking command in '/home/x311/town_ws/src/build/learning_service_cpp': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_service_cpp -- -j4 -l4
+[10.855s] [ 25%] [32mBuilding CXX object CMakeFiles/service_adder_server.dir/src/service_adder_server.cpp.o[0m
+[25.347s] [ 50%] [32m[1mLinking CXX executable service_adder_server[0m
+[26.270s] [ 50%] Built target service_adder_server
+[26.399s] [ 75%] [32mBuilding CXX object CMakeFiles/service_adder_client.dir/src/service_adder_client.cpp.o[0m
+[39.867s] [100%] [32m[1mLinking CXX executable service_adder_client[0m
+[40.405s] [100%] Built target service_adder_client
+[40.454s] Invoked command in '/home/x311/town_ws/src/build/learning_service_cpp' returned '0': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_service_cpp -- -j4 -l4
+[40.669s] Invoking command in '/home/x311/town_ws/src/build/learning_service_cpp': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_service_cpp
+[40.696s] -- Install configuration: ""
+[40.697s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/lib/learning_service_cpp/service_adder_server
+[40.701s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_service_cpp/lib/learning_service_cpp/service_adder_server" to ""
+[40.702s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/lib/learning_service_cpp/service_adder_client
+[40.706s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_service_cpp/lib/learning_service_cpp/service_adder_client" to ""
+[40.707s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/ament_index/resource_index/package_run_dependencies/learning_service_cpp
+[40.708s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/ament_index/resource_index/parent_prefix_path/learning_service_cpp
+[40.709s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/environment/ament_prefix_path.sh
+[40.709s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/environment/ament_prefix_path.dsv
+[40.710s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/environment/path.sh
+[40.711s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/environment/path.dsv
+[40.711s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/local_setup.bash
+[40.712s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/local_setup.sh
+[40.713s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/local_setup.zsh
+[40.714s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/local_setup.dsv
+[40.714s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/package.dsv
+[40.715s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/ament_index/resource_index/packages/learning_service_cpp
+[40.716s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/cmake/learning_service_cppConfig.cmake
+[40.716s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/cmake/learning_service_cppConfig-version.cmake
+[40.718s] -- Installing: /home/x311/town_ws/src/install/learning_service_cpp/share/learning_service_cpp/package.xml
+[40.730s] Invoked command in '/home/x311/town_ws/src/build/learning_service_cpp' returned '0': AMENT_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x311/town_ws/src/install/learning_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/x311/town_ws/src/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/x311/town_ws/src/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_service_cpp

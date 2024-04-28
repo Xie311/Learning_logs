@@ -1,0 +1,91 @@
+[1.852s] Invoking command in '/home/x311/town_ws/src/build/learning_tf_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_tf_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_tf_cpp
+[2.317s] -- The C compiler identification is GNU 11.4.0
+[2.716s] -- The CXX compiler identification is GNU 11.4.0
+[2.774s] -- Detecting C compiler ABI info
+[3.165s] -- Detecting C compiler ABI info - done
+[3.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.191s] -- Detecting C compile features
+[3.191s] -- Detecting C compile features - done
+[3.206s] -- Detecting CXX compiler ABI info
+[3.830s] -- Detecting CXX compiler ABI info - done
+[3.861s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.863s] -- Detecting CXX compile features
+[3.885s] -- Detecting CXX compile features - done
+[3.894s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.902s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[5.348s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.577s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.585s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.653s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.882s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.505s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[6.789s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.797s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.398s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.504s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.716s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.767s] -- Looking for pthread.h
+[8.418s] -- Looking for pthread.h - found
+[8.419s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.990s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.002s] -- Found Threads: TRUE  
+[9.650s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[9.744s] -- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)
+[11.399s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[11.677s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.107s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.110s] -- Configured cppcheck include dirs: 
+[12.111s] -- Configured cppcheck exclude dirs and/or files: 
+[12.111s] -- Added test 'flake8' to check Python code syntax and style conventions
+[12.112s] -- Added test 'lint_cmake' to check CMake code style
+[12.114s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[12.126s] -- Added test 'uncrustify' to check C / C++ code style
+[12.126s] -- Configured uncrustify additional arguments: 
+[12.126s] -- Added test 'xmllint' to check XML markup files
+[12.127s] -- Configuring done
+[12.221s] -- Generating done
+[12.227s] -- Build files have been written to: /home/x311/town_ws/src/build/learning_tf_cpp
+[13.181s] Invoked command in '/home/x311/town_ws/src/build/learning_tf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_tf_cpp -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_tf_cpp
+[13.185s] Invoking command in '/home/x311/town_ws/src/build/learning_tf_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_tf_cpp -- -j4 -l4
+[13.598s] [ 12%] [32mBuilding CXX object CMakeFiles/static_tf_broadcaster.dir/src/static_tf_broadcaster.cpp.o[0m
+[35.080s] [ 25%] [32m[1mLinking CXX executable static_tf_broadcaster[0m
+[36.670s] [ 25%] Built target static_tf_broadcaster
+[36.840s] [ 37%] [32mBuilding CXX object CMakeFiles/turtle_following.dir/src/turtle_following.cpp.o[0m
+[65.457s] [ 50%] [32m[1mLinking CXX executable turtle_following[0m
+[66.897s] [ 50%] Built target turtle_following
+[67.051s] [ 62%] [32mBuilding CXX object CMakeFiles/tf_listener.dir/src/tf_listener.cpp.o[0m
+[82.079s] [ 75%] [32m[1mLinking CXX executable tf_listener[0m
+[82.714s] [ 75%] Built target tf_listener
+[82.823s] [ 87%] [32mBuilding CXX object CMakeFiles/turtle_tf_broadcaster.dir/src/turtle_tf_broadcaster.cpp.o[0m
+[108.168s] [100%] [32m[1mLinking CXX executable turtle_tf_broadcaster[0m
+[109.595s] [100%] Built target turtle_tf_broadcaster
+[109.635s] Invoked command in '/home/x311/town_ws/src/build/learning_tf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_tf_cpp -- -j4 -l4
+[109.893s] Invoking command in '/home/x311/town_ws/src/build/learning_tf_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_tf_cpp
+[109.922s] -- Install configuration: ""
+[109.924s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/static_tf_broadcaster
+[109.937s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/static_tf_broadcaster" to ""
+[109.938s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/turtle_tf_broadcaster
+[109.955s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/turtle_tf_broadcaster" to ""
+[109.956s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/tf_listener
+[109.958s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/tf_listener" to ""
+[109.962s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/turtle_following
+[109.970s] -- Set runtime path of "/home/x311/town_ws/src/install/learning_tf_cpp/lib/learning_tf_cpp/turtle_following" to ""
+[109.972s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp//launch
+[109.974s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp//launch/turtle_following_demo.launch.py
+[109.980s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/ament_index/resource_index/package_run_dependencies/learning_tf_cpp
+[109.983s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/ament_index/resource_index/parent_prefix_path/learning_tf_cpp
+[109.985s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/environment/ament_prefix_path.sh
+[109.986s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/environment/ament_prefix_path.dsv
+[109.988s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/environment/path.sh
+[109.988s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/environment/path.dsv
+[109.991s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/local_setup.bash
+[109.992s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/local_setup.sh
+[109.994s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/local_setup.zsh
+[109.996s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/local_setup.dsv
+[109.997s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/package.dsv
+[110.000s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/ament_index/resource_index/packages/learning_tf_cpp
+[110.000s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/cmake/learning_tf_cppConfig.cmake
+[110.002s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/cmake/learning_tf_cppConfig-version.cmake
+[110.004s] -- Installing: /home/x311/town_ws/src/install/learning_tf_cpp/share/learning_tf_cpp/package.xml
+[110.011s] Invoked command in '/home/x311/town_ws/src/build/learning_tf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_tf_cpp

@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000106] (-) JobUnselected: {'identifier': 'learning_action'}
+[0.000123] (-) JobUnselected: {'identifier': 'learning_action'}
+[0.000134] (-) JobUnselected: {'identifier': 'learning_action_cpp'}
+[0.000142] (-) JobUnselected: {'identifier': 'learning_cv'}
+[0.000150] (-) JobUnselected: {'identifier': 'learning_gazebo'}
+[0.000164] (-) JobUnselected: {'identifier': 'learning_gazebo_fortress'}
+[0.000173] (-) JobUnselected: {'identifier': 'learning_interface'}
+[0.000182] (-) JobUnselected: {'identifier': 'learning_launch'}
+[0.000190] (-) JobUnselected: {'identifier': 'learning_node_cpp'}
+[0.000199] (-) JobUnselected: {'identifier': 'learning_parameter'}
+[0.000207] (-) JobUnselected: {'identifier': 'learning_parameter_cpp'}
+[0.000216] (-) JobUnselected: {'identifier': 'learning_pkg_c'}
+[0.000224] (-) JobUnselected: {'identifier': 'learning_pkg_python'}
+[0.000234] (-) JobUnselected: {'identifier': 'learning_qos'}
+[0.000242] (-) JobUnselected: {'identifier': 'learning_service'}
+[0.000250] (-) JobUnselected: {'identifier': 'learning_service_cpp'}
+[0.000257] (-) JobUnselected: {'identifier': 'learning_tf'}
+[0.000266] (-) JobUnselected: {'identifier': 'learning_tf_cpp'}
+[0.000275] (-) JobUnselected: {'identifier': 'learning_topic'}
+[0.000283] (-) JobUnselected: {'identifier': 'learning_topic_cpp'}
+[0.000292] (-) JobUnselected: {'identifier': 'learning_urdf'}
+[0.000301] (-) JobUnselected: {'identifier': 'village_li'}
+[0.000310] (-) JobUnselected: {'identifier': 'village_wang'}
+[0.000320] (learning_node) JobQueued: {'identifier': 'learning_node', 'dependencies': OrderedDict()}
+[0.000333] (learning_node) JobStarted: {'identifier': 'learning_node'}
+[0.099106] (-) TimerEvent: {}
+[0.199356] (-) TimerEvent: {}
+[0.299550] (-) TimerEvent: {}
+[0.318659] (learning_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/learning_node', 'build', '--build-base', '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build', 'install', '--record', '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/src/ros2_21_tutorials/learning_node', 'env': {'LANGUAGE': 'zh_CN:zh', 'USER': 'x311', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'OLDPWD': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws', 'HOME': '/home/x311', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/x311/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '1469', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=bbda10349772cc0ee5b1973566128884', 'DBUS_STARTER_BUS_TYPE': 'session', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install', 'LOGNAME': 'x311', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'x311', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/x311-Inspiron-16-5620:@/tmp/.ICE-unix/1469,unix/x311-Inspiron-16-5620:/tmp/.ICE-unix/1469', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4be09b74_9806_4f36_acaf_973c5745ed58', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ZEITGEIST_DATA_PATH': '/home/x311/.local/share/zeitgeist', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.147', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.THQSL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'AMENT_PREFIX_PATH': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node:/opt/ros/humble', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'QT_IM_MODULE': 'ibus', 'PWD': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=bbda10349772cc0ee5b1973566128884', 'PYTHONPATH': '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/prefix_override:/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages:/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.399737] (-) TimerEvent: {}
+[0.448393] (learning_node) StdoutLine: {'line': b'running egg_info\n'}
+[0.448724] (learning_node) StdoutLine: {'line': b'writing ../../../build/learning_node/learning_node.egg-info/PKG-INFO\n'}
+[0.448816] (learning_node) StdoutLine: {'line': b'writing dependency_links to ../../../build/learning_node/learning_node.egg-info/dependency_links.txt\n'}
+[0.448909] (learning_node) StdoutLine: {'line': b'writing entry points to ../../../build/learning_node/learning_node.egg-info/entry_points.txt\n'}
+[0.449040] (learning_node) StdoutLine: {'line': b'writing requirements to ../../../build/learning_node/learning_node.egg-info/requires.txt\n'}
+[0.449096] (learning_node) StdoutLine: {'line': b'writing top-level names to ../../../build/learning_node/learning_node.egg-info/top_level.txt\n'}
+[0.450057] (learning_node) StdoutLine: {'line': b"reading manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'\n"}
+[0.450476] (learning_node) StdoutLine: {'line': b"writing manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'\n"}
+[0.450594] (learning_node) StdoutLine: {'line': b'running build\n'}
+[0.450676] (learning_node) StdoutLine: {'line': b'running build_py\n'}
+[0.450769] (learning_node) StdoutLine: {'line': b'running install\n'}
+[0.450995] (learning_node) StdoutLine: {'line': b'running install_lib\n'}
+[0.452110] (learning_node) StdoutLine: {'line': b'running install_data\n'}
+[0.452251] (learning_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.453232] (learning_node) StdoutLine: {'line': b"removing '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.453382] (learning_node) StdoutLine: {'line': b'Copying ../../../build/learning_node/learning_node.egg-info to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info\n'}
+[0.453890] (learning_node) StdoutLine: {'line': b'running install_scripts\n'}
+[0.474261] (learning_node) StdoutLine: {'line': b'Installing kim_winter script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node\n'}
+[0.474546] (learning_node) StdoutLine: {'line': b'Installing node_helloworld script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node\n'}
+[0.474714] (learning_node) StdoutLine: {'line': b'Installing node_helloworld_class script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node\n'}
+[0.474814] (learning_node) StdoutLine: {'line': b'Installing node_object script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node\n'}
+[0.474902] (learning_node) StdoutLine: {'line': b'Installing node_object_webcam script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node\n'}
+[0.475490] (learning_node) StdoutLine: {'line': b"writing list of installed files to '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log'\n"}
+[0.499886] (-) TimerEvent: {}
+[0.506795] (learning_node) CommandEnded: {'returncode': 0}
+[0.514258] (learning_node) JobEnded: {'identifier': 'learning_node', 'rc': 0}
+[0.514629] (-) EventReactorShutdown: {}

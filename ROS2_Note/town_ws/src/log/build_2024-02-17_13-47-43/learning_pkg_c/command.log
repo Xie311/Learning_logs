@@ -1,0 +1,6 @@
+Invoking command in '/home/x311/town_ws/src/build/learning_pkg_c': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_pkg_c -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_pkg_c
+Invoked command in '/home/x311/town_ws/src/build/learning_pkg_c' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/x311/town_ws/src/ros2_21_tutorials/learning_pkg_c -DCMAKE_INSTALL_PREFIX=/home/x311/town_ws/src/install/learning_pkg_c
+Invoking command in '/home/x311/town_ws/src/build/learning_pkg_c': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_pkg_c -- -j4 -l4
+Invoked command in '/home/x311/town_ws/src/build/learning_pkg_c' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/x311/town_ws/src/build/learning_pkg_c -- -j4 -l4
+Invoking command in '/home/x311/town_ws/src/build/learning_pkg_c': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_pkg_c
+Invoked command in '/home/x311/town_ws/src/build/learning_pkg_c' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/x311/town_ws/src/build/learning_pkg_c

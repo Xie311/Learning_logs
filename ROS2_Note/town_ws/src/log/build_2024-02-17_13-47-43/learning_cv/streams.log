@@ -1,0 +1,39 @@
+[5.335s] Invoking command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_cv': PYTHONPATH=/home/x311/town_ws/src/build/learning_cv/prefix_override:/home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_cv build --build-base /home/x311/town_ws/src/build/learning_cv/build install --record /home/x311/town_ws/src/build/learning_cv/install.log --single-version-externally-managed
+[6.271s] running egg_info
+[6.276s] creating ../../build/learning_cv/learning_cv.egg-info
+[6.276s] writing ../../build/learning_cv/learning_cv.egg-info/PKG-INFO
+[6.276s] writing dependency_links to ../../build/learning_cv/learning_cv.egg-info/dependency_links.txt
+[6.277s] writing entry points to ../../build/learning_cv/learning_cv.egg-info/entry_points.txt
+[6.279s] writing requirements to ../../build/learning_cv/learning_cv.egg-info/requires.txt
+[6.279s] writing top-level names to ../../build/learning_cv/learning_cv.egg-info/top_level.txt
+[6.280s] writing manifest file '../../build/learning_cv/learning_cv.egg-info/SOURCES.txt'
+[6.281s] reading manifest file '../../build/learning_cv/learning_cv.egg-info/SOURCES.txt'
+[6.284s] writing manifest file '../../build/learning_cv/learning_cv.egg-info/SOURCES.txt'
+[6.285s] running build
+[6.286s] running build_py
+[6.286s] creating /home/x311/town_ws/src/build/learning_cv/build
+[6.286s] creating /home/x311/town_ws/src/build/learning_cv/build/lib
+[6.289s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.289s]   warnings.warn(
+[6.290s] creating /home/x311/town_ws/src/build/learning_cv/build/lib/learning_cv
+[6.290s] copying learning_cv/cv_bridge_test.py -> /home/x311/town_ws/src/build/learning_cv/build/lib/learning_cv
+[6.290s] copying learning_cv/__init__.py -> /home/x311/town_ws/src/build/learning_cv/build/lib/learning_cv
+[6.290s] running install
+[6.291s] running install_lib
+[6.292s] creating /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv
+[6.292s] copying /home/x311/town_ws/src/build/learning_cv/build/lib/learning_cv/cv_bridge_test.py -> /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv
+[6.292s] copying /home/x311/town_ws/src/build/learning_cv/build/lib/learning_cv/__init__.py -> /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv
+[6.294s] byte-compiling /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv/cv_bridge_test.py to cv_bridge_test.cpython-310.pyc
+[6.296s] byte-compiling /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv/__init__.py to __init__.cpython-310.pyc
+[6.296s] running install_data
+[6.298s] creating /home/x311/town_ws/src/install/learning_cv/share/ament_index
+[6.298s] creating /home/x311/town_ws/src/install/learning_cv/share/ament_index/resource_index
+[6.298s] creating /home/x311/town_ws/src/install/learning_cv/share/ament_index/resource_index/packages
+[6.298s] copying resource/learning_cv -> /home/x311/town_ws/src/install/learning_cv/share/ament_index/resource_index/packages
+[6.299s] copying package.xml -> /home/x311/town_ws/src/install/learning_cv/share/learning_cv
+[6.299s] running install_egg_info
+[6.303s] Copying ../../build/learning_cv/learning_cv.egg-info to /home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages/learning_cv-0.0.0-py3.10.egg-info
+[6.317s] running install_scripts
+[6.417s] Installing cv_bridge_test script to /home/x311/town_ws/src/install/learning_cv/lib/learning_cv
+[6.419s] writing list of installed files to '/home/x311/town_ws/src/build/learning_cv/install.log'
+[6.486s] Invoked command in '/home/x311/town_ws/src/ros2_21_tutorials/learning_cv' returned '0': PYTHONPATH=/home/x311/town_ws/src/build/learning_cv/prefix_override:/home/x311/town_ws/src/install/learning_cv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_cv build --build-base /home/x311/town_ws/src/build/learning_cv/build install --record /home/x311/town_ws/src/build/learning_cv/install.log --single-version-externally-managed

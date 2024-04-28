@@ -1,0 +1,26 @@
+running egg_info
+writing ../../../build/learning_node/learning_node.egg-info/PKG-INFO
+writing dependency_links to ../../../build/learning_node/learning_node.egg-info/dependency_links.txt
+writing entry points to ../../../build/learning_node/learning_node.egg-info/entry_points.txt
+writing requirements to ../../../build/learning_node/learning_node.egg-info/requires.txt
+writing top-level names to ../../../build/learning_node/learning_node.egg-info/top_level.txt
+reading manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+writing manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+running build
+running build_py
+copying learning_node/node_kimwinter.py -> /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build/lib/learning_node
+running install
+running install_lib
+copying /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/build/lib/learning_node/node_kimwinter.py -> /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node
+byte-compiling /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node/node_kimwinter.py to node_kimwinter.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/learning_node/learning_node.egg-info to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/python3.10/site-packages/learning_node-0.0.0-py3.10.egg-info
+running install_scripts
+Installing node_helloworld script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+Installing node_helloworld_class script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+Installing node_object script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+Installing node_object_webcam script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+Installing winter script to /media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/install/learning_node/lib/learning_node
+writing list of installed files to '/media/x311/D214869714867DEB/Study_log/ROS2_Note/town_ws/build/learning_node/install.log'
