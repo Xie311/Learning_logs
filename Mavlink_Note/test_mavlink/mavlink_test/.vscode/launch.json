@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "jlink",
+            "servertype": "jlink",
+            "interface": "swd",
+            "executable": "build\\Debug\\mavlink_test.elf",
+            "runToEntryPoint": "main",
+            "device": "null",
+            "toolchainPrefix": "arm-none-eabi"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "stlink",
+            "servertype": "openocd",
+            "executable": "build\\Debug\\mavlink_test.elf",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/<target-name>.cfg"
+            ],
+            "toolchainPrefix": "arm-none-eabi"
+        },
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": true,
+            "cwd": "d:/Study_log/Mavlink_Note/test_mavlink/mavlink_test/Core/Src",
+            "program": "d:/Study_log/Mavlink_Note/test_mavlink/mavlink_test/Core/Src/build/Debug/outDebug",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

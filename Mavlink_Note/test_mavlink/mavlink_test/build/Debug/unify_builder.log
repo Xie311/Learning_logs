@@ -1,0 +1,67 @@
+[2024-03-28 22:12:47]	[done]
+	build successfully !
+
+[2024-03-28 23:02:59]	compilation failed at : "d:\Study_log\Mavlink_Note\test_mavlink\mavlink_test\Core\Src\main.c", exit code: 1
+command: 
+  "D:\Program Files\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I.eide/deps -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -ICore/Src -IDrivers/STM32F1xx_HAL_Driver/Src -DUSE_HAL_DRIVER -DSTM32F103xB -mcpu=cortex-m3 -Og -Wall -g --specs=nosys.specs --specs=nano.specs -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:26:10: error: #include expects "FILENAME" or <FILENAME>
+   26 | #include wtr_mavlink.h
+      |          ^~~~~~~~~~~
+
+[2024-03-28 23:03:22]	[done]
+	build successfully !
+
+[2024-03-28 23:03:58]	compilation failed at : "d:\Study_log\Mavlink_Note\test_mavlink\mavlink_test\Core\Src\main.c", exit code: 1
+command: 
+  "D:\Program Files\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I.eide/deps -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -ICore/Src -IDrivers/STM32F1xx_HAL_Driver/Src -DUSE_HAL_DRIVER -DSTM32F103xB -mcpu=cortex-m3 -Og -Wall -g --specs=nosys.specs --specs=nano.specs -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:26:10: fatal error: user_main.h: No such file or directory
+   26 | #include "user_main.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+[2024-03-28 23:05:03]	compilation failed at : "d:\Study_log\Mavlink_Note\test_mavlink\mavlink_test\Core\Src\main.c", exit code: 1
+command: 
+  "D:\Program Files\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I.eide/deps -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -ICore/Src -IDrivers/STM32F1xx_HAL_Driver/Src -IUC -IUC/test -DUSE_HAL_DRIVER -DSTM32F103xB -mcpu=cortex-m3 -Og -Wall -g --specs=nosys.specs --specs=nano.specs -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:26:10: fatal error: user_main.h: No such file or directory
+   26 | #include "user_main.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+[2024-03-28 23:42:25]	compilation failed at : "d:\Study_log\Mavlink_Note\test_mavlink\mavlink_test\Core\Src\main.c", exit code: 1
+command: 
+  "D:\Program Files\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I.eide/deps -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -ICore/Src -IDrivers/STM32F1xx_HAL_Driver/Src -IUC -IUC/test -DUSE_HAL_DRIVER -DSTM32F103xB -mcpu=cortex-m3 -Og -Wall -g --specs=nosys.specs --specs=nano.specs -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:26:10: fatal error: user_main.h: No such file or directory
+   26 | #include "user_main.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+[2024-03-28 23:44:52]	compilation failed at : "d:\Study_log\Mavlink_Note\test_mavlink\mavlink_test\Core\Src\main.c", exit code: 1
+command: 
+  "D:\Program Files\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I.eide/deps -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -ICore/Src -IDrivers/STM32F1xx_HAL_Driver/Src -IUC -IUC/test -DUSE_HAL_DRIVER -DSTM32F103xB -mcpu=cortex-m3 -Og -Wall -g --specs=nosys.specs --specs=nano.specs -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:26:10: fatal error: user_main.h: No such file or directory
+   26 | #include "user_main.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+[2024-03-28 23:50:18]	[done]
+	build successfully !
+
+[2024-03-29 10:21:33]	[done]
+	build successfully !
+
+[2024-03-29 10:23:54]	[done]
+	build successfully !
+
+[2024-03-29 10:24:33]	[done]
+	build successfully !
+

@@ -1,0 +1,58 @@
+>>> cc
+
+In file included from UC/test/../protocol.h:89,
+                 from UC/test/test.h:29,
+                 from UC/test/mavlink.h:32,
+                 from ./UC/wtr_mavlink.h:105,
+                 from ./UC/wtr_mavlink.c:12:
+UC/test/../mavlink_helpers.h: In function 'mavlink_finalize_message_buffer':
+UC/test/../mavlink_helpers.h:85:24: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+   85 |  crc_accumulate_buffer(&msg->checksum, _MAV_PAYLOAD(msg), msg->len);
+      |                        ^~~~~~~~~~~~~~
+UC/test/../mavlink_helpers.h:87:28: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+   87 |  crc_accumulate(crc_extra, &msg->checksum);
+      |                            ^~~~~~~~~~~~~~
+UC/test/../mavlink_helpers.h: In function 'mavlink_finalize_message_chan':
+UC/test/../mavlink_helpers.h:126:24: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  126 |  crc_accumulate_buffer(&msg->checksum, _MAV_PAYLOAD(msg), msg->len);
+      |                        ^~~~~~~~~~~~~~
+UC/test/../mavlink_helpers.h:128:28: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  128 |  crc_accumulate(crc_extra, &msg->checksum);
+      |                            ^~~~~~~~~~~~~~
+UC/test/../mavlink_helpers.h: In function 'mavlink_start_checksum':
+UC/test/../mavlink_helpers.h:240:11: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  240 |  crc_init(&msg->checksum);
+      |           ^~~~~~~~~~~~~~
+UC/test/../mavlink_helpers.h: In function 'mavlink_update_checksum':
+UC/test/../mavlink_helpers.h:245:20: warning: taking address of packed member of 'struct __mavlink_message' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  245 |  crc_accumulate(c, &msg->checksum);
+      |                    ^~~~~~~~~~~~~~
+In file included from UC/test/test.h:49,
+                 from UC/test/mavlink.h:32,
+                 from ./UC/wtr_mavlink.h:105,
+                 from ./UC/wtr_mavlink.c:12:
+UC/test/./mavlink_msg_test_types.h: In function 'mavlink_msg_test_types_send_buf':
+UC/test/./mavlink_msg_test_types.h:558:5: warning: converting a packed 'mavlink_message_t' {aka 'struct __mavlink_message'} pointer (alignment 1) to a 'mavlink_test_types_t' {aka 'struct __mavlink_test_types_t'} pointer (alignment 8) may result in an unaligned pointer value [-Waddress-of-packed-member]
+  558 |     mavlink_test_types_t *packet = (mavlink_test_types_t *)msgbuf;
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from ./UC/wtr_mavlink.h:22,
+                 from ./UC/wtr_mavlink.c:12:
+./UC/mavlink_types.h:115:16: note: defined here
+  115 | typedef struct __mavlink_message {
+      |                ^~~~~~~~~~~~~~~~~
+./UC/mavlink_types.h:13:40: note: in definition of macro 'MAVPACKED'
+   13 |   #define MAVPACKED( __Declaration__ ) __Declaration__ __attribute__((packed))
+      |                                        ^~~~~~~~~~~~~~~
+In file included from UC/test/test.h:49,
+                 from UC/test/mavlink.h:32,
+                 from ./UC/wtr_mavlink.h:105,
+                 from ./UC/wtr_mavlink.c:12:
+UC/test/./mavlink_msg_test_types.h:6:16: note: defined here
+    6 | typedef struct __mavlink_test_types_t {
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+
+>>> ld
+
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1656 B        20 KB      8.09%
+           FLASH:        5160 B        64 KB      7.87%

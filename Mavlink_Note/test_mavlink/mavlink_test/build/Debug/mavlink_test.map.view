@@ -1,0 +1,3 @@
+tool: GCC
+fileName: mavlink_test.map
+elfName: mavlink_test.elf
