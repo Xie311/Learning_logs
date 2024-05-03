@@ -411,3 +411,9 @@ stm32f103 在 arm-none-eabi-gcc-10.3.1 编译器下：
 开启 O3 优化：2M 波特率成功收发，2.5M 波特率接收失败
 
 不开优化：1M 波特率接收失败，115200 (0.1M) 波特率接收成功
+
+## 四、上位机PyMAVlink发送信息
+
+[pymavlink简单使用_mav_type 12-CSDN博客](https://blog.csdn.net/u014220146/article/details/133673795?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133673795-blog-103156075.235^v43^pc_blog_bottom_relevance_base3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133673795-blog-103156075.235^v43^pc_blog_bottom_relevance_base3&utm_relevant_index=1)
+
+[用 Python 玩转串口（基于 pySerial）_python打开串口-CSDN博客](https://blog.csdn.net/bryanwang_3099/article/details/120493736)
