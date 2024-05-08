@@ -1,4 +1,4 @@
-# STM32使用MAVlink^_^
+# STM32使用MAVlink
 
 ## 一、Python环境下安装MAVlink
 
@@ -413,6 +413,16 @@ stm32f103 在 arm-none-eabi-gcc-10.3.1 编译器下：
 不开优化：1M 波特率接收失败，115200 (0.1M) 波特率接收成功
 
 ## 四、上位机PyMAVlink发送信息
+
+[STM32_Basic/Note/A4_上下位机的串口通信(PySerial)/A4_PySerial串口通信.md at main · SSC202/STM32_Basic (github.com)](https://github.com/SSC202/STM32_Basic/blob/main/Note/A4_上下位机的串口通信(PySerial)/A4_PySerial串口通信.md)
+
+[树莓派4B的串口使用，并通过串口与其他设备经过通讯协议发送、接收数据。_树莓派4b的qt串口接收-CSDN博客](https://blog.csdn.net/k_aabb/article/details/115584507)
+
+```
+sudo vim /boot/firmware/config.txt
+```
+
+---
 
 [pymavlink简单使用_mav_type 12-CSDN博客](https://blog.csdn.net/u014220146/article/details/133673795?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133673795-blog-103156075.235^v43^pc_blog_bottom_relevance_base3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133673795-blog-103156075.235^v43^pc_blog_bottom_relevance_base3&utm_relevant_index=1)
 

@@ -1,5 +1,24 @@
 # 使用Python MAVLink库(GPT翻译官网)
 
+**生成自定义 MAVLink 方言**
+如果你需要自定义方言的库，那么你需要安装代码生成器 mavgen 并自行生成库。你还需要将它们包含在 pymavlink 中，并在你的系统上进行本地安装。
+
+生成你自定义方言的 Python MAVLink 库。
+将生成的 .py MAVLink 方言库文件复制到 mavlink 仓库克隆的适当目录中：
+MAVLink 2：pymavlink/dialects/v20
+MAVLink 1：pymavlink/dialects/v10
+打开命令提示符并导航到 pymavlink 目录。
+如果需要，卸载之前的版本：
+
+pip uninstall pymavlink
+如果之前没有使用 pip 安装过 pymavlink，请安装依赖项：
+
+python3 -m pip install -r pymavlink/requirements.txt
+运行 python 设置程序：
+
+python setup.py install --user
+生成的 MAVLink 库可以像使用 pip 安装的那样使用。
+
 ## 一、概述
 
 pymavlink包含方言特定的生成模块，提供编码和解码消息以及应用和检查签名的低级功能。
@@ -59,6 +78,38 @@ from pymavlink.dialects.v20 import common as mavlink2
 ```
 
 ## 三、建立连接
+
+#### 确定串口号
+
+```python
+import serial
+import serial.tools.list_ports
+ 
+# 获取所有串口设备实例。
+# 如果没找到串口设备，则输出：“无串口设备。”
+# 如果找到串口设备，则依次输出每个设备对应的串口号和描述信息。
+ports_list = list(serial.tools.list_ports.comports())
+if len(ports_list) <= 0:
+    print("无串口设备。")
+else:
+    print("可用的串口设备如下：")
+    for comport in ports_list:
+        print(list(comport)[0], list(comport)[1])
+```
+
+#### 运行结果
+
+```
+可用的串口设备如下：
+COM4 蓝牙链接上的标准串行 (COM4)
+COM6 蓝牙链接上的标准串行 (COM6)
+COM5 蓝牙链接上的标准串行 (COM5)
+COM18 Prolific PL2303GT USB Serial COM Port (COM18)
+COM17 Prolific USB-to-Serial Comm Port (COM17)
+COM3 蓝牙链接上的标准串行 (COM3)
+```
+
+---
 
 **mavutil模块提供了mavlink_connection()方法，用于在串行端口、tcp或udp通道上建立与MAVLink系统的通信链接。**它还可以连接到文件对象，这在处理遥测日志时非常有用。
 
@@ -121,7 +172,7 @@ udpcast：广播UDP地址和端口。这与udp相同，只是使用mavlink_conne
 
 ---
 
-连接类型	连接字符串
+**连接类型	连接字符串**
 Linux计算机通过USB连接到车辆	/dev/ttyUSB0
 通过串行端口连接到车辆的Linux计算机（树莓派示例）	/dev/ttyAMA0（还要设置baud=57600）
 MAVLink API监听SITL连接的UDP	udpin:localhost:14540（或udp:localhost:14540、127.0.0.1:14540等）
@@ -354,3 +405,24 @@ MAVProxy是一个面向命令行和控制台的基于MAVLink的无人机地面�
 DroneKit-Python是基于Pymavlink的开发人员API。
 它实现了一个更简单的高级API，用于访问飞行器信息，还实现了一些MAVLink子协议/微服务的实现（例如任务协议）。
 源代码可以在这里找到：https://github.com/dronekit/dronekit-python
+
+---
+
+```python
+from pymavlink import mavutil
+import time
+
+connect = mavutil.mavlink_connection('udpout:127.0.0.1:8000', source_system=1, source_component=2)
+# connect = mavutil.mavlink_connection('udpbcast:127.0.0.1:8000', source_system=1, source_component=2)
+target_system = connect.target_system
+target_component = connect.target_component
+
+mission_request_list_message = connect.mav.mission_request_list_encode(target_system, target_component)
+# 发送mavlink消息
+count = 10
+while count > 0:
+    connect.mav.send(mission_request_list_message)
+    count -= 1
+    time.sleep(1)
+```
+
